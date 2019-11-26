@@ -8,6 +8,7 @@ We will describe the biology two most well-known epigenomic modifications: [DNA 
 
 ## Biology: DNA Methylation
 ### Introduction
+More to come--researching!
 
 ## Biology: Histone Modifications
 ### Introduction
@@ -28,7 +29,7 @@ Unlike histone acetylation, methylation is a post-translational epigenetic modif
 Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair. 
 
 ### III. Histone Ubiquitylation
-
+More to come--researching!
 
 ## Analysis Techniques: DNA Methylation
 ### Background
@@ -53,13 +54,11 @@ The first milestone in a bisulfite sequencing analysis is the treatment of DNA w
 
 The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) is becoming increasingly viable, it is not yet a common method. Thus, we will not focus on this here and will instead continue with the more common analysis pipeline: region-specific analysis.
 
-
 #### Computational Analyses
-
+More to come--researching!
 
 #### Challenges
-
-
+More to come--researching!
 
 
 ### II. HELP Assay
@@ -68,10 +67,13 @@ The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverag
 
 More to come--researching!
 #### Lab Technique
+More to come--researching!
 
 #### Computational Analyses
+More to come--researching!
 
 #### Challenges
+More to come--researching!
 
 
 ## Analysis Techniques: Histone Modifications
