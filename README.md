@@ -13,11 +13,24 @@ We will describe the biology two most well-known epigenomic modifications: [DNA 
 ### Introduction
 
 ## Analysis Techniques: DNA Methylation
-### Introduction
-The goal of DNA Methylation analysis is fairly simple: we wish to detect what parts of the genome are methylated. 
+### Background
+The goal of DNA Methylation analysis is fairly obvious: we wish to detect what parts of the genome are methylated to identify, confirm, or analyze downregulated regions.
+
+Let's take an example: We have two bacterial samples that should both be expressing a gene that turns them blue. However, one culture appears blue while the other appears white. Given what we've learned, we may hypothesize that, for some reason, the white colony of bacteria have methylated the region containing the gene, thus downregulating it. How can we test this hypothesis?
+
+Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**. Therefore, we require other analysis technqiues:
+
+### I. Bisulfite Sequencing
+Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected as thymine, so every detected cytosine will be methylated, giving a clear indication of which regions are methylated.
+
+### II. HELP Assay
+The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverages restriction enzyme digestion analysis to determine DNA methylation patterns.
+
+More to come--researching!
+
 
 
 ## Analysis Techniques: Histone Modifications
-### Introduction
+### Background
 
 ## Citations
