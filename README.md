@@ -21,16 +21,43 @@ Let's take an example: We have two bacterial samples that should both be express
 Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**. Therefore, we require other analysis technqiues:
 
 ### I. Bisulfite Sequencing
+#### Overview
 Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected as thymine, so every detected cytosine will be methylated, giving a clear indication of which regions are methylated.
 
+![Bisulfite Conversion](assets/Bisulfite_Conversion.png)  
+The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.
+#### Lab Technique
+The first milestone in a bisulfite sequencing analysis is the treatment of DNA with [bisulfite](https://en.wikipedia.org/wiki/Bisulfite). There are three major steps in this protocol:
+
+1. Denaturation of DNA into single strands.
+2. Incubation with bisulfite solution at high temperature.
+3. Cleaning of DNA; removal of bisulfite and residues
+
+The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) is becoming increasingly viable, it is not yet a common method. Thus, we will not focus on this here and will instead continue with the more common analysis pipeline: region-specific analysis.
+
+
+#### Downsteam Analyses
+
+
+#### Challenges
+
+
+
+
 ### II. HELP Assay
+#### Overview
 The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverages restriction enzyme digestion analysis to determine DNA methylation patterns.
 
 More to come--researching!
+#### Lab Technique
 
+#### Downsteam Analyses
+
+#### Challenges
 
 
 ## Analysis Techniques: Histone Modifications
 ### Background
+More to come--researching!
 
 ## Citations
