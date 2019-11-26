@@ -36,7 +36,7 @@ The first milestone in a bisulfite sequencing analysis is the treatment of DNA w
 The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) is becoming increasingly viable, it is not yet a common method. Thus, we will not focus on this here and will instead continue with the more common analysis pipeline: region-specific analysis.
 
 
-#### Downsteam Analyses
+#### Computational Analyses
 
 
 #### Challenges
@@ -51,7 +51,7 @@ The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverag
 More to come--researching!
 #### Lab Technique
 
-#### Downsteam Analyses
+#### Computational Analyses
 
 #### Challenges
 
