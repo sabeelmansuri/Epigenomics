@@ -32,6 +32,9 @@ Unlike histone acetylation, methylation is a post-translational epigenetic modif
 ### III. Histone Phosphorylation
 Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair. 
 
+<img src="/assets/Histone_Phosphorylation.png" width=450px/>
+One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.
+
 ### III. Histone Ubiquitylation
 More to come--researching!
 
