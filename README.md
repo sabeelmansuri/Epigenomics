@@ -1,4 +1,4 @@
-# Epigenomics
+<img src="/assets/Logo.png" width=300px/>
 ## Overview
 In examining the diversity of life, we're often directed to the sequence of an organism's DNA as the source of variation. Differences in these genomes are directly correlated with changes in genetic products, regulatory affects, and molecular interactions--all of which contribute to the great phenotypic variety observed in our world.
 
