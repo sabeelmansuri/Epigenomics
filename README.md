@@ -16,7 +16,10 @@ Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleo
 ### I. Histone Acetylation
 Acetylation connects a negative charge acetyl group to lysine residues of the N-terminal histone tails (specifically H3 and H4) by histone acetyltransferase (HAT). By doing so, negatively charged DNA is repelled, causing the chromatin to relax into euchromatin and allow for transcription factors to bind and increase gene expression. Deacetylation by histone deacetylase (HDAC) however condenses chromatin into heterochromatin, therefore deactivating gene activity.
 
+<br />
 
+<img src="/assets/Histone_Acetylation.png" width=450px/>
+Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.
 
 ### II. Histone Methylation/Demethylation
 Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression. 
