@@ -11,14 +11,14 @@ We will describe the biology two most well-known epigenomic modifications: [DNA 
 ### Introduction
 DNA Methylation is a process by which methyl group are added to the DNA molecule. This is catalyzed by family of DNA methyltransferases (Dnmts), enztme which can transfer methyl group from S-adenyl methionine (SAM) to the fifth carbon of a cytosine residue to form 5-methylcytosine(5mC). DNA Methylation was discovered as early as DNA was identified as the genetic material by Rollin Hotchkiss in 1948. It is well recognized that DNA methylation is a major epigenetic factor that influence gene expression. 
 
-## I. Location of DNA Methylation
+### I. Location of DNA Methylation
 The most of the DNA methylation happens on cytosines that precede a guanine nucleotide, which is also called CpG sites. Most of the CpG sites are heavily methylated expected for CpG island. 
 
 In Mammals, region called CpG island is GC- and CpG-rich sequences that are not methylated. The definition of CpG region contains
 
-1.sequence length longer than 200bp.
-2.G+C contents is more than 50%.
-3.a ratio of observed to expected CpG greater than 0.6.
+1. sequence length longer than 200bp.
+2. G+C contents is more than 50%.
+3. a ratio of observed to expected CpG greater than 0.6.
 
 In human genome, there are around 25,000 CpG islands, 75% of which being less than 850bp long. Around 50% of CpG islands contain transcription starting site. Also, because lots of binding sites of transcription factor are GC rich, CpG islands are considered to enhance binding of transcription factor.
 
