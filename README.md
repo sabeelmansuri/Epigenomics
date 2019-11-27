@@ -9,7 +9,19 @@ We will describe the biology two most well-known epigenomic modifications: [DNA 
 
 ## Biology: DNA Methylation
 ### Introduction
-More to come--researching!
+DNA Methylation is a process by which methyl group are added to the DNA molecule. This is catalyzed by family of DNA methyltransferases (Dnmts), enztme which can transfer methyl group from S-adenyl methionine (SAM) to the fifth carbon of a cytosine residue to form 5-methylcytosine(5mC). DNA Methylation was discovered as early as DNA was identified as the genetic material by Rollin Hotchkiss in 1948. It is well recognized that DNA methylation is a major epigenetic factor that influence gene expression. 
+
+## I. Location of DNA Methylation
+The most of the DNA methylation happens on cytosines that precede a guanine nucleotide, which is also called CpG sites. Most of the CpG sites are heavily methylated expected for CpG island. 
+
+In Mammals, region called CpG island is GC- and CpG-rich sequences that are not methylated. The definition of CpG region contains
+
+1.sequence length longer than 200bp.
+2.G+C contents is more than 50%.
+3.a ratio of observed to expected CpG greater than 0.6.
+
+In human genome, there are around 25,000 CpG islands, 75% of which being less than 850bp long. Around 50% of CpG islands contain transcription starting site. Also, because lots of binding sites of transcription factor are GC rich, CpG islands are considered to enhance binding of transcription factor.
+
 
 ## Biology: Histone Modifications
 ### Introduction
@@ -91,3 +103,4 @@ More to come--researching!
 1. [Darst, Russell P et al. “Bisulfite sequencing of DNA.” Current protocols in molecular biology vol. Chapter 7 (2010): Unit 7.9.1-17. doi:10.1002/0471142727.mb0709s91.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214597/#S2title)  
 2. [Kurdyukov, Sergey, and Martyn Bullock. “DNA Methylation Analysis: Choosing the Right Method.” Biology vol. 5,1 3. 6 Jan. 2016, doi:10.3390/biology5010003.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4810160/)  
 3. [Oda, Mayumi, and John M. Greally. “The Help Assay.” Methods in Molecular Biology DNA Methylation, 2009, pp. 77–87., doi:10.1007/978-1-59745-522-0_7.](https://link.springer.com/10.1007/978-1-59745-522-0_7)
+4. [Gardiner-Garden M, Frommer M. "CpG islands in vertebrate genomes". Journal of Molecular Biology. 196 (2): 261–82. July 1987. doi:10.1016/0022-2836(87)90689-9.](https://www.sciencedirect.com/science/article/pii/0022283687906899?via%3Dihub)
