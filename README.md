@@ -130,11 +130,11 @@ Overview of two variations of the HELP assay. Note that overall idea is identica
 Two DNA samples are 
 
 #### Computational Analysis
-One of the key benefits of this technique is that it is fairly light on dry-lab analysis. Though results are generally more qualitative and inexact, it is a far simpler and easier protocol than bisulfite sequencing.
+One of the key benefits of this technique is that it's fairly light on dry-lab analysis. Though results are generally more qualitative and inexact, it is a far simpler and easier protocol than bisulfite sequencing.
 
 However, there have been attempts to increase the quantitative power of the assay. A data analysis pipeline in R was developed to take signal intensity data of the microarrays and run various normalizations and to quantify the differences. This pipeline, hoever, is *not* packaged as a tool, but contains a series of computational steps in R that are beyond the scope of this introductory epigenomics lesson. The detailed paper, however, is linked [here](https://academic.oup.com/bioinformatics/article/24/9/1161/207143) for reference.
 
-### Analysis of Techniques
+### Review of DNA Methylation Analysis Techniques
 As mentioned before, bisulfite sequencing generally provides more quantifiably solid results than the HELP assay, but also requires greater wetlab and computational power. Indeed, the computational tools for bisulfite sequencing are plentiful, and will generate robust analyses. However, the HELP assay provides a great low-effort alternative for determining DNA methylation levels in a generic context.
 
 From a broader perspective, a recurring limitation of DNA methylation analysis is that any given result is only a snapshot of a single cell at a given point in time. This means repeating an experiment on the same organism may yield vastly different results given that a different cell in a different point in time is used. 
@@ -159,7 +159,7 @@ More to come--researching!
 
 #### Computational Analysis
 
-### Analysis of Techniques
+### Review of Histone Modification Analysis Techniques
 
 ## Citations
 1. [Darst, Russell P et al. “Bisulfite sequencing of DNA.” Current protocols in molecular biology vol. Chapter 7 (2010): Unit 7.9.1-17. doi:10.1002/0471142727.mb0709s91.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214597/#S2title)  
