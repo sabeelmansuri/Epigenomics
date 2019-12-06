@@ -9,7 +9,9 @@ We will describe the biology two most well-known epigenomic modifications: [DNA 
 
 ## Biology: DNA Methylation
 ### Introduction
-DNA Methylation is a process by which methyl group are added to the DNA molecule. This is catalyzed by family of DNA methyltransferases (Dnmts), enztme which can transfer methyl group from S-adenyl methionine (SAM) to the fifth carbon of a cytosine residue to form 5-methylcytosine(5mC). DNA Methylation was discovered as early as DNA was identified as the genetic material by Rollin Hotchkiss in 1948. It is well recognized that DNA methylation is a major epigenetic factor that influence gene expression. 
+The first epigenomic modification was discovered as early as the identification of DNA as the genetic material by Rollin Hotchkiss in 1984: DNA methylation.
+
+DNA Methylation is a process by which methyl group are added to DNA molecules. It's catalyzed by family of DNA methyltransferases (Dnmts), enzymes which can transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of a cytosine residue to form 5-methylcytosine (5mC).
 
 ### I. Location of DNA Methylation
 The most of the DNA methylation happens on cytosines that precede a guanine nucleotide, which is also called CpG sites. Most of the CpG sites are heavily methylated expected for CpG island. 
