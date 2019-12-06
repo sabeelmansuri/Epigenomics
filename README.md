@@ -94,9 +94,24 @@ Native:     GCATCTAC
 We see the bisulfite sequence identifies the cytosines at positions 2 and 9 as thymines, but the cytosine at position 5 remains a cytosine. We would conclue that the cytosines at positions 2 and 9 were not methylated, while the cytosine at position 2 was.
 
 #### Computational Analyses II - 
+TODO
 
 #### Bonus - Whole Genome Bisulfite Sequencing Analysis
-TODO
+The quintessential question asked of WGBS is, "What regions of the genome are methylation-rich?" Here, the data required for analysis are slightly different than before:
+
+1. Bisulfite sequencing data (FASTQ)
+2. Reference genome of interest (FASTA)
+
+Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent tool for such an analysis. Given these inputs, the following general analysis steps are performed:
+
+1. Quality assessment of raw data
+2. Read alignment to reference genome
+3. Methylation site analysis and grouping
+
+The tool will then output information about methylation-rich sites, relative methylation level, and more.
+
+<img src="/assets/WGBS.jpg" width=450px/>
+Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note the __.
 
 
 ### II. HELP Assay
