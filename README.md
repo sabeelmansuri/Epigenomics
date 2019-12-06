@@ -111,7 +111,7 @@ Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent too
 The tool will then output information about methylation-rich sites, relative methylation level, and more.
 
 <img src="/assets/WGBS.jpg"/>
-Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note the __.
+Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note in particular 1) the lollipop plot that shows % methylation arranged according to samples' accurate chromosomal coordinates and 2) the patternmap showing methylation significance by sample.
 
 
 ### II. HELP Assay
