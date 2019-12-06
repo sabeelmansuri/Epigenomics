@@ -110,7 +110,7 @@ Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent too
 
 The tool will then output information about methylation-rich sites, relative methylation level, and more.
 
-<img src="/assets/WGBS.jpg" width=450px/>
+<img src="/assets/WGBS.jpg"/>
 Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note the __.
 
 
