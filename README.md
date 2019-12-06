@@ -43,14 +43,14 @@ Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the
 ### II. Histone Methylation/Demethylation
 Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression. 
 
+<img src="/assets/Histone_Demethylation.png" width=450px/>
+Add methylation image with name specified in raw md into assets folder.
+
 ### III. Histone Phosphorylation
 Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair. 
 
 <img src="/assets/Histone_Phosphorylation.png" width=450px/>
 One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.
-
-### III. Histone Ubiquitylation
-More to come--researching!
 
 ## Analysis Techniques: DNA Methylation
 ### Background
@@ -58,14 +58,15 @@ The goal of DNA Methylation analysis is fairly obvious: we wish to detect what p
 
 Let's take an example: We have two bacterial samples that should both be expressing a gene that turns them blue. However, one culture appears blue while the other appears white. Given what we've learned, we may hypothesize that, for some reason, the white colony of bacteria have methylated the region containing the gene, thus downregulating it. How can we test this hypothesis?
 
-Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**. Therefore, we require other analysis technqiues:
+Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**. Therefore, we require other analysis technqiues, one that allows us to differentiate between these two:
 
 ### I. Bisulfite Sequencing
 #### Overview
-Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected as thymine, so every detected cytosine will be methylated, giving a clear indication of which regions are methylated.
+Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected during sequencing as thymine, so every detected cytosine will be a methylated cytosine, giving a clear indication of which regions are methylated.
 
 ![Bisulfite Conversion](assets/Bisulfite_Conversion.png)  
 The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.
+
 #### Lab Technique
 The first milestone in a bisulfite sequencing analysis is the treatment of DNA with [bisulfite](https://en.wikipedia.org/wiki/Bisulfite). There are three major steps in this protocol:
 
