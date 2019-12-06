@@ -74,7 +74,7 @@ The first milestone in a bisulfite sequencing analysis is the treatment of DNA w
 2. Incubation with bisulfite solution at high temperature.
 3. Cleaning of DNA; removal of bisulfite and residues
 
-The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) (WGBS) is becoming increasingly viable, it is not yet a common method. Thus, we will only describe the lab technique for region-specific analysis. However, we will mention one WGBS analysis method [below](#Bonus-Whole-Genome-Bisulfite-Sequencing-Analysis).
+The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) (WGBS) is becoming increasingly viable, it is not yet a common method. Thus, we will only describe the lab technique for region-specific analysis. However, we will mention one WGBS analysis method [below](#Bonus---Whole-Genome-Bisulfite-Sequencing-Analysis).
 
 Having used bisulfite to convert all non-methylated cytosine to uracil, the next step is to use a [Polymerase Chain Reaction](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (PCR) to amplify the region of interest. Traditionally, primers that do not rely heavily on cytosine presence (such as selecting for low cytosine or CpG island rich areas) are preferred, so converted cytosine do not inhibit PCR amplification. Additionally, in parallel, a PCR for the same region is run on DNA that has *not* been treated with bisulfite.
 
