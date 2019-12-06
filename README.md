@@ -120,7 +120,7 @@ More to come--researching!
 #### Lab Technique
 More to come--researching!
 
-#### Computational Analyses
+#### Computational Analysis
 More to come--researching!
 
 ### Challenges
@@ -131,6 +131,22 @@ A better method would be one that uses continual measurement of methylation inst
 ## Analysis Techniques: Histone Modifications
 ### Background
 More to come--researching!
+
+### I.
+#### Overview
+
+#### Lab Technique
+
+#### Computational Analysis
+
+### II.
+#### Overview
+
+#### Lab Technique
+
+#### Computational Analysis
+
+### Challenges
 
 ## Citations
 1. [Darst, Russell P et al. “Bisulfite sequencing of DNA.” Current protocols in molecular biology vol. Chapter 7 (2010): Unit 7.9.1-17. doi:10.1002/0471142727.mb0709s91.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214597/#S2title)  
