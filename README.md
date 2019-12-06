@@ -131,7 +131,7 @@ Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI
 
 Each sample is then subjected to ligation-mediated PCR (LM-PCR). This protocol first links fluorescently labeled sequences to every fragment. These sequences are complementary to the PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
 
-<img src="/assets/LM_PCR.png" width=450px/>
+<img src="/assets/LM_PCR.jpg" width=450px/>
 Simplified visualization of LM-PCR's protocol principle. 
 
 Next, a microarray is set up such that it contains binding sites for expected `CCGA` site cuts (determined using reference sequence analysis). Equal amounts of each PCR product is added evenly across the microarray, creating a mosaic of MspI and HpaII bound sequences. The microarray is then scanned twice, once for each type of fluorescent label used. The difference in fluorescence between the two is representative of the methylation level.
