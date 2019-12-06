@@ -135,7 +135,7 @@ One of the key benefits of this technique is that it is fairly light on dry-lab 
 However, there have been attempts to increase the quantitative power of the assay. A data analysis pipeline in R was developed to take signal intensity data of the microarrays and run various normalizations and to quantify the differences. This pipeline, hoever, is *not* packaged as a tool, but contains a series of computational steps in R that are beyond the scope of this introductory epigenomics lesson. The detailed paper, however, is linked [here](https://academic.oup.com/bioinformatics/article/24/9/1161/207143) for reference.
 
 ### Challenges
-The key limitation of DNA methylation analysis is that any given result is only a snapshot of a single cell at a given point in time. This means repeating an experiment on the same organism may yield vastly different results given that a different cell in a different point in time is used. 
+A major limitation of DNA methylation analysis is that any given result is only a snapshot of a single cell at a given point in time. This means repeating an experiment on the same organism may yield vastly different results given that a different cell in a different point in time is used. 
 
 A better method would be one that uses continual measurement of methylation instead of endpoint analysis; this way, we may get a better glimpse into the dynamic mechanisms of true genomic methylation. Such tools and techniques are being developed and implemented today.
 
