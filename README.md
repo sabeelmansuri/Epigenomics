@@ -84,7 +84,7 @@ Both PCR products (bisulfite-treated and native DNA) are cleaned and sequenced u
 
 We now move to computational analyses conducted on these data files.
 
-#### Computational Analysis I - Alignment Comparison
+#### Computational Analysis I
 The simplest analysis possible with these two files is aligning the two sequences, and identifying where there is a C-T mismatch. For example, take the two sequences below:
 ```
 Bisulfite:  GTATCTAT
@@ -93,11 +93,11 @@ Native:     GCATCTAC
 
 We see the bisulfite sequence identifies the cytosines at positions 2 and 9 as thymines, but the cytosine at position 5 remains a cytosine. We would conclue that the cytosines at positions 2 and 9 were not methylated, while the cytosine at position 2 was.
 
-#### Computational Analyses II - 
-TODO
+#### Computational Analysis II
+A more interesting analysis than a base-by-base comparison is one that answers, "What areas of this region of interest are methylation-rich?" 
 
 #### Bonus - Whole Genome Bisulfite Sequencing Analysis
-The quintessential question asked of WGBS is, "What regions of the genome are methylation-rich?" Here, the data required for analysis are slightly different than before:
+The quintessential question asked of WGBS is, "What regions of the whole genome are methylation-rich?" Here, the data required for analysis are slightly different than before:
 
 1. Bisulfite sequencing data (FASTQ)
 2. Reference genome of interest (FASTA)
@@ -108,11 +108,10 @@ Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent too
 2. Read alignment to reference genome
 3. Methylation site analysis and grouping
 
-The tool will then output information about methylation-rich sites, relative methylation level, and more.
+The tool will then output information about methylation-rich sites, relative methylation level, and more (shown below).
 
 <img src="/assets/WGBS.jpg"/>
 Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note in particular 1) the lollipop plot that shows % methylation arranged according to samples' accurate chromosomal coordinates and 2) the patternmap showing methylation significance by sample.
-
 
 ### II. HELP Assay
 #### Overview
@@ -125,9 +124,10 @@ More to come--researching!
 #### Computational Analyses
 More to come--researching!
 
-#### Challenges
-More to come--researching!
+### Challenges
+The key limitation of DNA methylation analysis techniques is that any given result is only a snapshot of a single cell at a given point in time. This means repeating an experiment on the same organism may yield vastly different results given that a different cell in a different point in time is used. 
 
+A better method would be one that uses continual measurement of methylation instead of endpoint analysis; this way, we may get a better glimpse into the dynamic mechanisms of true genomic methylation. Such tools and techniques are being developed today.
 
 ## Analysis Techniques: Histone Modifications
 ### Background
