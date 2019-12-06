@@ -8,6 +8,7 @@ However, in this paper, we wish to look beyond the genome. Instead, we introduce
 We will describe the biology of the two most well-known epigenomic modifications: [DNA Methylation](#Biology-DNA-Methylation) and [Histone Modifications](#Biology-Histone-Modifications). Then, we will describe the analytical techniques used to quantify each epigenomic modification.
 
 ## Biology: DNA Methylation
+### Please note the DNA Methylation section is incomplete, and more will be added.
 ### Introduction
 The first epigenomic modification was discovered as early as the identification of DNA as the genetic material by Rollin Hotchkiss in 1984: DNA methylation.
 
@@ -116,12 +117,22 @@ Summary of various data outputs by EPIC TABSAT (click above for clearer image). 
 #### Overview
 The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverages restriction enzyme digestion analysis to determine DNA methylation patterns.
 
-More to come--researching!
+Two restriction enzymes are used:
+1. HpaII, which cuts DNA at `CCGA` sites where the inner cytosine is *not* methylated
+2. MspI, which cuts DNA at `CCGA` sites regardless of cytosine methlyation
+
+Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI digestion. The digests are PCR amplified with fluorescent labels, which allows comparison of how many times HpaII and MspI cut. Since HpaII cannot digest methylated sites, we expect that the more digests MspI cut over HpaII, the more methylation there is.
+
+<img src="/assets/HELP_Overview.png" width=450px/>
+Overview of two variations of the HELP assay. Note that overall idea is identical.
+
 #### Lab Technique
-More to come--researching!
+Two DNA samples are 
 
 #### Computational Analysis
-More to come--researching!
+One of the key benefits of this technique is that it is fairly light on dry-lab analysis. Though results are generally more qualitative and inexact, it is a far simpler and easier protocol than bisulfite sequencing.
+
+However, there have been attempts to increase the quantitative power of the assay. A data analysis pipeline in R was developed to take signal intensity data of the microarrays and run various normalizations and to quantify the differences. This pipeline, hoever, is *not* packaged as a tool, but contains a series of computational steps in R that are beyond the scope of this introductory epigenomics lesson. The detailed paper, however, is linked [here](https://academic.oup.com/bioinformatics/article/24/9/1161/207143) for reference.
 
 ### Challenges
 The key limitation of DNA methylation analysis is that any given result is only a snapshot of a single cell at a given point in time. This means repeating an experiment on the same organism may yield vastly different results given that a different cell in a different point in time is used. 
@@ -155,4 +166,5 @@ More to come--researching!
 4. [Kurdyukov, Sergey, and Martyn Bullock. “DNA Methylation Analysis: Choosing the Right Method.” Biology vol. 5,1 3. 6 Jan. 2016, doi:10.3390/biology5010003.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4810160/)  
 5. [Oda, Mayumi, and John M. Greally. “The Help Assay.” Methods in Molecular Biology DNA Methylation, 2009, pp. 77–87., doi:10.1007/978-1-59745-522-0_7.](https://link.springer.com/10.1007/978-1-59745-522-0_7)
 6. [Pedersen, B., et al. “MethylCoder: Software Pipeline for Bisulfite-Treated Sequences.” Bioinformatics, vol. 27, no. 17, 2011, pp. 2435–2436., doi:10.1093/bioinformatics/btr394.](https://www.ncbi.nlm.nih.gov/pubmed/21724594)
+7. [Thompson, Reid F., et al. “An Analytical Pipeline for Genomic Representations Used for Cytosine Methylation Studies.” Bioinformatics, vol. 24, no. 9, 2008, pp. 1161–1167., doi:10.1093/bioinformatics/btn096.](https://www.ncbi.nlm.nih.gov/pubmed/18353789)
 
