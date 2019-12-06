@@ -44,7 +44,7 @@ Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the
 Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression. 
 
 <img src="/assets/Histone_Methylation.png" width=450px/>
-Add methylation image with name specified in raw md into assets folder.
+Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.
 
 ### III. Histone Phosphorylation
 Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair. 
