@@ -84,7 +84,7 @@ Both PCR products (bisulfite-treated and native DNA) are cleaned and sequenced u
 
 We now move to computational analyses conducted on these data files.
 
-#### Computational Analysis I
+#### Computational Analysis
 The simplest analysis possible with these two files is aligning the two sequences, and identifying where there is a C-T mismatch. For example, take the two sequences below:
 ```
 Bisulfite:  GTATCTAT
@@ -93,8 +93,7 @@ Native:     GCATCTAC
 
 We see the bisulfite sequence identifies the cytosines at positions 2 and 9 as thymines, but the cytosine at position 5 remains a cytosine. We would conclue that the cytosines at positions 2 and 9 were not methylated, while the cytosine at position 2 was.
 
-#### Computational Analysis II
-A more interesting analysis than a base-by-base comparison is one that answers, "What areas of this region of interest are methylation-rich?" 
+A related but more interesting analysis than a base-by-base comparison is one that answers, "What areas of this region of interest are methylation-rich?" Tools such as [MethylCoder](https://github.com/brentp/methylcode) provide the answer by aggeregating the results of the base-by-base comparison, determining locales with high aggregate values, and reporting the raw and aggregated results.
 
 #### Bonus - Whole Genome Bisulfite Sequencing Analysis
 The quintessential question asked of WGBS is, "What regions of the whole genome are methylation-rich?" Here, the data required for analysis are slightly different than before:
