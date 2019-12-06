@@ -74,13 +74,29 @@ The first milestone in a bisulfite sequencing analysis is the treatment of DNA w
 2. Incubation with bisulfite solution at high temperature.
 3. Cleaning of DNA; removal of bisulfite and residues
 
-The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) is becoming increasingly viable, it is not yet a common method. Thus, we will not focus on this here and will instead continue with the more common analysis pipeline: region-specific analysis.
+The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) (WGBS) is becoming increasingly viable, it is not yet a common method. Thus, we will only describe the lab technique for region-specific analysis. However, we will mention one WGBS analysis method [below](#Bonus-Whole-Genome-Bisulfite-Sequencing-Analysis).
 
-#### Computational Analyses
-More to come--researching!
+Having used bisulfite to convert all non-methylated cytosine to uracil, the next step is to use a [Polymerase Chain Reaction](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (PCR) to amplify the region of interest. Traditionally, primers that do not rely heavily on cytosine presence (such as selecting for low cytosine or CpG island rich areas) are preferred, so converted cytosine do not inhibit PCR amplification. Additionally, in parallel, a PCR for the same region is run on DNA that has *not* been treated with bisulfite.
 
-#### Challenges
-More to come--researching!
+Both PCR products (bisulfite-treated and native DNA) are cleaned and sequenced using any modern sequencing technique. This yields two digital sequence files:
+1. A bisulfite-treated sequence where each cytosine is a methylated cytosine.
+2. A native DNA sequence that is true to the original sequence. 
+
+We now move to computational analyses conducted on these data files.
+
+#### Computational Analysis I - Alignment Comparison
+The simplest analysis possible with these two files is aligning the two sequences, and identifying where there is a C-T mismatch. For example, take the two sequences below:
+```
+Bisulfite:  GTATCTAT
+Native:     GCATCTAC
+```
+
+We see the bisulfite sequence identifies the cytosines at positions 2 and 9 as thymines, but the cytosine at position 5 remains a cytosine. We would conclue that the cytosines at positions 2 and 9 were not methylated, while the cytosine at position 2 was.
+
+#### Computational Analyses II - 
+
+#### Bonus - Whole Genome Bisulfite Sequencing Analysis
+TODO
 
 
 ### II. HELP Assay
