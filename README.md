@@ -39,7 +39,8 @@ Epigenetic Clock is a major of age from DNA methylation level in human body. The
 Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications to chromatin structure along with epigenetic markers influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.
 
 <img src="/assets/Histone_Background.png" width=450px/>
-General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.
+***Figure*** *General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.*
+
 
 ### I. Histone Acetylation
 Acetylation connects a negative charge acetyl group to lysine residues of the N-terminal histone tails (specifically H3 and H4) by histone acetyltransferase (HAT). By doing so, negatively charged DNA is repelled, causing the chromatin to relax into euchromatin and allow for transcription factors to bind and increase gene expression. Deacetylation by histone deacetylase (HDAC) however condenses chromatin into heterochromatin, therefore deactivating gene activity.
@@ -140,6 +141,7 @@ Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI
 Each sample is then subjected to ligation-mediated PCR (LM-PCR). This protocol first links fluorescently labeled sequences to every fragment. These sequences are complementary to the PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
 
 <img src="/assets/LM_PCR.jpg" width=450px/>
+***Figure** caption here*
 
 Next, a microarray is set up such that it contains binding sites for expected `CCGA` site cuts (determined using reference sequence analysis). Equal amounts of each PCR product is added evenly across the microarray, creating a mosaic of MspI and HpaII bound sequences. The microarray is then scanned twice, once for each type of fluorescent label used. The difference in fluorescence between the two is representative of the methylation level.
 
@@ -159,8 +161,9 @@ A better method would be one that uses continual measurement of methylation inst
 ### Background
 More to come--researching!
 
-### I.
+### I. ChIP-Seq
 #### Overview
+Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This can then be used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression.
 
 #### Lab Technique
 
