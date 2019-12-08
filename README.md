@@ -166,7 +166,7 @@ More to come--researching!
 Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This can then be used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression.
 
 
-<img src="/assets/ChIP_Seq.jpg" width=450px/>
+<img src="/assets/ChIP_Seq.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
 Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells. We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites? 
@@ -193,7 +193,7 @@ Before jumping into the fun stuff we must:
 
 Next we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular softwares include: MACS, PeakSeq, SICER, CCAT, etc. From here, your data can be visualized on a genome browser. 
 
-<img src="/assets/ChIP_Visualization.jpg" width=450px/>
+<img src="/assets/ChIP_Visualization.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
 We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed. 
