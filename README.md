@@ -39,7 +39,7 @@ Epigenetic Clock is a major of age from DNA methylation level in human body. The
 Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications to chromatin structure along with epigenetic markers influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.
 
 <img src="/assets/Histone_Background.png" width=450px/>
-***Figure*** *General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.*
+<i><b>Figure</b> General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.</i>
 
 
 ### I. Histone Acetylation
