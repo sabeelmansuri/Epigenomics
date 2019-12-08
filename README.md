@@ -48,19 +48,19 @@ Acetylation connects a negative charge acetyl group to lysine residues of the N-
 <br />
 
 <img src="/assets/Histone_Acetylation.png" width=450px/>
-Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.
+<i><b>Figure</b> Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.</i>
 
 ### II. Histone Methylation/Demethylation
 Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression. 
 
 <img src="/assets/Histone_Methylation.png" width=450px/>
-Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.
+<i><b>Figure</b> Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.</i>
 
 ### III. Histone Phosphorylation
 Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair. 
 
 <img src="/assets/Histone_Phosphorylation.png" width=450px/>
-One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.
+<i><b>Figure</b> One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.</i>
 
 ## Analysis Techniques: DNA Methylation
 ### Background
@@ -120,7 +120,7 @@ Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent too
 The tool will then output information about methylation-rich sites, relative methylation level, and more (shown below).
 
 <img src="/assets/WGBS.jpg"/>
-Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note in particular 1) the lollipop plot that shows % methylation arranged according to samples' accurate chromosomal coordinates and 2) the patternmap showing methylation significance by sample.
+<i><b>Figure</b> Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note in particular 1) the lollipop plot that shows % methylation arranged according to samples' accurate chromosomal coordinates and 2) the patternmap showing methylation significance by sample.</i>
 
 ### II. HELP Assay
 #### Overview
@@ -133,7 +133,7 @@ Two restriction enzymes are used:
 This results in MspI cutting DNA into some number of additional fragments compared to HpaII, and calculating the magnitude of this difference provides a relative measurement of DNA methylation.
 
 <img src="/assets/HELP_Overview.png" width=450px/>
-Overview of two variations of the HELP assay. Note that overall idea is identical.
+<i><b>Figure</b> Overview of two variations of the HELP assay. Note that overall idea is identical.</i>
 
 #### Lab Technique
 Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI digestion. We assume the HpaII sample has been digested at only `CCGA` sites where the inner cytosine is *not* methylated, resulting in some number of fragments. Additionally, we assume the MspI sample has been digested at all of the sites that HpaII was, but additionally at `CCGA` sites where the inner cytosine *is* methylated.
@@ -141,7 +141,7 @@ Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI
 Each sample is then subjected to ligation-mediated PCR (LM-PCR). This protocol first links fluorescently labeled sequences to every fragment. These sequences are complementary to the PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
 
 <img src="/assets/LM_PCR.jpg" width=450px/>
-***Figure** caption here*
+<i><b>Figure</b> caption here</i>
 
 Next, a microarray is set up such that it contains binding sites for expected `CCGA` site cuts (determined using reference sequence analysis). Equal amounts of each PCR product is added evenly across the microarray, creating a mosaic of MspI and HpaII bound sequences. The microarray is then scanned twice, once for each type of fluorescent label used. The difference in fluorescence between the two is representative of the methylation level.
 
