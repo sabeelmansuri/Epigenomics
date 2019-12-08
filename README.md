@@ -165,9 +165,38 @@ More to come--researching!
 #### Overview
 Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This can then be used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression.
 
+
+<img src="/assets/ChIP_Seq.jpg" width=450px/>
+<i><b>Figure</b> caption here</i>
+
+Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells. We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites? 
+
+We know that histone acetylation happens when acetyl group attaches to the histone tails of certain proteins by HAT. So by using ChIP, we can find where on our DNA sequence these acetyl groups are using protein specific antibodies in our case, we will use anti-histone H3K27ac.
+
 #### Lab Technique
+Here is the basic protocol for both samples:
+
+1. Crosslink cells with formaldehyde 
+2. Isolate and shear DNA into chromatin fragments 
+3. Immunoprecipitate with protein-specific antibody 
+4. Reverse-crosslinks and purify DNA for sequencing 
+
+Next, we prepare the sequence libraries by attaching sequence adaptors to both ends of each fragment. We must then perform PCR to amplify the library and check its concentration. The next step is sequencing. Many sequencing techniques can be used in this step. 
+
+We now move to computational analyses conducted on these data files.
 
 #### Computational Analysis
+Before jumping into the fun stuff we must:
+
+1. Clean the raw reads by removing adaptors and PCR duplicates
+2. Computationally align fragments to the reference genome 
+
+Next we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular softwares include: MACS, PeakSeq, SICER, CCAT, etc. From here, your data can be visualized on a genome browser. 
+
+<img src="/assets/ChIP_Visualization.jpg" width=450px/>
+<i><b>Figure</b> caption here</i>
+
+We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed. 
 
 ### II.
 #### Overview
@@ -186,3 +215,4 @@ Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein 
 5. [Oda, Mayumi, and John M. Greally. “The Help Assay.” Methods in Molecular Biology DNA Methylation, 2009, pp. 77–87., doi:10.1007/978-1-59745-522-0_7.](https://link.springer.com/10.1007/978-1-59745-522-0_7)
 6. [Pedersen, B., et al. “MethylCoder: Software Pipeline for Bisulfite-Treated Sequences.” Bioinformatics, vol. 27, no. 17, 2011, pp. 2435–2436., doi:10.1093/bioinformatics/btr394.](https://www.ncbi.nlm.nih.gov/pubmed/21724594)
 7. [Thompson, Reid F., et al. “An Analytical Pipeline for Genomic Representations Used for Cytosine Methylation Studies.” Bioinformatics, vol. 24, no. 9, 2008, pp. 1161–1167., doi:10.1093/bioinformatics/btn096.](https://www.ncbi.nlm.nih.gov/pubmed/18353789)
+8. [Yao et al. (2017). VHL Deficiency Drives Enhancer Activation of Oncogenes in Clear Cell Renal Cell Carcinoma. Cancer Discovery. 7. CD-17. 10.1158/2159-8290.CD-17-0375.](https://www.ncbi.nlm.nih.gov/pubmed/28893800)
