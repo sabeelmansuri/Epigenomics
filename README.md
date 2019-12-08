@@ -83,7 +83,7 @@ Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identic
 #### Overview
 Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected during sequencing as thymine, so every detected cytosine will be a methylated cytosine, giving a clear indication of which regions are methylated.
 
-![Bisulfite Conversion](https://github.com/sabeelmansuri/Epigenomics/blob/masterassets/Bisulfite_Conversion.png)  
+![Bisulfite Conversion](https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Bisulfite_Conversion.png)  
 <i><b>Figure</b> The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.</i>
 
 #### Lab Technique
