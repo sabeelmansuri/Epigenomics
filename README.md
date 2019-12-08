@@ -27,8 +27,8 @@ For a region to be considered a CpG island, it must have:
 
 In human genome, there are around 25,000 CpG islands, about half of which contain transcription start sites. Such CpG islands can directly influence expression levels by the following mechanism:
 
-1. CpG islands are methlyated
-2. The added methyl groups block transcription factor binding, preventing transcription
+1. CpG islands are methlyated, adding steric bulk
+2. The added steric bulk blocks transcription factor binding, preventing transcription
 3. Reduced transcription leads to reduced expression levels
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/CpG_TF_Blocking.png" width=450px/>
@@ -37,10 +37,10 @@ In human genome, there are around 25,000 CpG islands, about half of which contai
 ### II. Supporting Protein
 The addition of the methyl group is modified in diffrent levels in body with work of protein family called DNA methyltransferases (DNMTs). There are three types of DNMTs including DNMT1, DNMT3a and DNMT3b. Those three DNMTs are required for establishment and keeping the DNA methylation patterns. Another two proteins in DNMT family, DNMT2 and DNMT3L, also doing some related but more specific work in methylation. DNMT3a and 3b works in establish of new or de novo methylation while DNMT1 works to do the maintenance work for already established methylation.
 
-### III. DNA methylation in Cancer
+### III. Case Study: DNA Methylation + Cancer
 DNA methylation is one of the important driver for the cancer development. In cancer cells, CpG islands are abnormally hypermethylated, which lead to silences of genes including tumor suppressor gene. Also, there are hypomethylation in some oncogenes. Those abnormal methylation would be able to be inherited by daughter cells, which would lead to growth of tumor. Moreover, microRNA expression in tumor cells is also altered a lot from normal cells.
 
-### IV. DNA methylation in Aging
+### IV. Case Study: DNA Methylation + Aging
 Epigenetic Clock is a major of age from DNA methylation level in human body. There was a longitudinal study with two genetically identical twins, which showed that methylation patterns changed and diverged a lot because of environment even in childhood. Also other studies show that DNA methylation level of some genes, like CD4+ T cells, will change proportionally to the age. DNA methylation is one of the keys to unravel the mystery of aging of human.
 
 ## Biology: Histone Modifications
