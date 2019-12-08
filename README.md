@@ -8,22 +8,31 @@ However, in this paper, we wish to look beyond the genome. Instead, we introduce
 We will breifly describe the biology of the two most well-known epigenomic modifications: [DNA Methylation](#Biology-DNA-Methylation) and [Histone Modifications](#Biology-Histone-Modifications). Then, we will describe in detail the analytical techniques and technologies used to quantify each epigenomic modification.
 
 ## Biology: DNA Methylation
-### Please note the DNA Methylation section is incomplete, and more will be added.
 ### Introduction
-The first epigenomic modification was discovered as early as the identification of DNA as the genetic material by Rollin Hotchkiss in 1984: DNA methylation.
+The first epigenomic modification discovered was DNA methylation. Uncovered as early as when Rollin Hotchkiss formalized the notion of DNA being the genetic material (1984), DNA methylation remains one of the most influential epigenomic modifications today.
 
-DNA Methylation is a process by which methyl group are added to DNA molecules. It's catalyzed by family of DNA methyltransferases (Dnmts), enzymes which can transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of a cytosine residue to form 5-methylcytosine (5mC).
+On the surface, it appears to be a simplistic process. DNA methyltransferaces (Dnmts) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA. As we'll see, this simple change can have an astronomic affect. First, some basics.
 
-### I. Location of DNA Methylation
-The most of the DNA methylation happens on cytosines that precede a guanine nucleotide, which is also called CpG sites. Most of the CpG sites are heavily methylated expected for CpG island. 
+### I. CpG Islands
+As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site. CpG sites are often grouped together in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.
 
-In Mammals, region called CpG island is GC- and CpG-rich sequences that are not methylated. The definition of CpG region contains
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/CpG_Island.png" width=450px/>
+<i><b>Figure</b> caption here</i>
 
-1. sequence length longer than 200bp.
-2. G+C contents is more than 50%.
-3. a ratio of observed to expected CpG greater than 0.6.
+For a region to be considered a CpG island, it must have:
 
-In human genome, there are around 25,000 CpG islands, 75% of which being less than 850bp long. Around 50% of CpG islands contain transcription starting site. Also, because lots of binding sites of transcription factor are GC rich, CpG islands are considered to enhance binding of transcription factor.
+1. A sequence length longer than 200bp
+2. A G+C content of more than 50%
+3. A statistical ratio of observed/expected CpG (cytosine followed by guanine) greater than 0.6
+
+In human genome, there are around 25,000 CpG islands, about half of which contain transcription start sites. Such CpG islands can directly influence expression levels by the following mechanism:
+
+1. CpG islands are methlyated
+2. The added methyl groups block transcription factor binding, preventing transcription
+3. Reduced transcription leads to reduced expression levels
+
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/CpG_TF_Blocking.png" width=450px/>
+<i><b>Figure</b> caption here</i>
 
 ### II. Supporting Protein
 The addition of the methyl group is modified in diffrent levels in body with work of protein family called DNA methyltransferases (DNMTs). There are three types of DNMTs including DNMT1, DNMT3a and DNMT3b. Those three DNMTs are required for establishment and keeping the DNA methylation patterns. Another two proteins in DNMT family, DNMT2 and DNMT3L, also doing some related but more specific work in methylation. DNMT3a and 3b works in establish of new or de novo methylation while DNMT1 works to do the maintenance work for already established methylation.
@@ -38,7 +47,7 @@ Epigenetic Clock is a major of age from DNA methylation level in human body. The
 ### Introduction
 Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications to chromatin structure along with epigenetic markers influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.
 
-<img src="/assets/Histone_Background.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Background.png" width=450px/>
 <i><b>Figure</b> General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.</i>
 
 
@@ -47,19 +56,19 @@ Acetylation connects a negative charge acetyl group to lysine residues of the N-
 
 <br />
 
-<img src="/assets/Histone_Acetylation.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Acetylation.png" width=450px/>
 <i><b>Figure</b> Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.</i>
 
 ### II. Histone Methylation/Demethylation
 Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression. 
 
-<img src="/assets/Histone_Methylation.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Methylation.png" width=450px/>
 <i><b>Figure</b> Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.</i>
 
 ### III. Histone Phosphorylation
 Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair. 
 
-<img src="/assets/Histone_Phosphorylation.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Phosphorylation.png" width=450px/>
 <i><b>Figure</b> One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.</i>
 
 ## Analysis Techniques: DNA Methylation
@@ -74,14 +83,14 @@ Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identic
 #### Overview
 Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected during sequencing as thymine, so every detected cytosine will be a methylated cytosine, giving a clear indication of which regions are methylated.
 
-![Bisulfite Conversion](assets/Bisulfite_Conversion.png)  
+![Bisulfite Conversion](https://github.com/sabeelmansuri/Epigenomics/blob/masterassets/Bisulfite_Conversion.png)  
 <i><b>Figure</b> The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.</i>
 
 #### Lab Technique
 The first milestone in a bisulfite sequencing analysis is the treatment of DNA with [bisulfite](https://en.wikipedia.org/wiki/Bisulfite). There are three major steps in this protocol:
 
-1. Denaturation of DNA into single strands.
-2. Incubation with bisulfite solution at high temperature.
+1. Denaturation of DNA into single strands
+2. Incubation with bisulfite solution at high temperature
 3. Cleaning of DNA; removal of bisulfite and residues
 
 The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) (WGBS) is becoming increasingly viable, it is not yet a common method. Thus, we will only describe the lab technique for region-specific analysis. However, we will mention one WGBS analysis method [below](#Bonus---Whole-Genome-Bisulfite-Sequencing-Analysis).
@@ -119,7 +128,7 @@ Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent too
 
 The tool will then output information about methylation-rich sites, relative methylation level, and more (shown below).
 
-<img src="/assets/WGBS.jpg"/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/WGBS.jpg"/>
 <i><b>Figure</b> Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note in particular 1) the lollipop plot that shows % methylation arranged according to samples' accurate chromosomal coordinates and 2) the patternmap showing methylation significance by sample.</i>
 
 ### II. HELP Assay
@@ -132,7 +141,7 @@ Two restriction enzymes are used:
 
 This results in MspI cutting DNA into some number of additional fragments compared to HpaII, and calculating the magnitude of this difference provides a relative measurement of DNA methylation.
 
-<img src="/assets/HELP_Overview.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/HELP_Overview.png" width=450px/>
 <i><b>Figure</b> Overview of two variations of the HELP assay. Note that overall idea is identical.</i>
 
 #### Lab Technique
@@ -140,7 +149,7 @@ Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI
 
 Each sample is then subjected to ligation-mediated PCR (LM-PCR). This protocol first links fluorescently labeled sequences to every fragment. These sequences are complementary to the PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
 
-<img src="/assets/LM_PCR.jpg" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/LM_PCR.jpg" width=450px/>
 <i><b>Figure</b> caption here</i>
 
 Next, a microarray is set up such that it contains binding sites for expected `CCGA` site cuts (determined using reference sequence analysis). Equal amounts of each PCR product is added evenly across the microarray, creating a mosaic of MspI and HpaII bound sequences. The microarray is then scanned twice, once for each type of fluorescent label used. The difference in fluorescence between the two is representative of the methylation level.
@@ -166,7 +175,7 @@ More to come--researching!
 Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This can then be used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression.
 
 
-<img src="/assets/ChIP_Seq.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Seq.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
 Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells. We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites? 
@@ -193,7 +202,7 @@ Before jumping into the fun stuff we must:
 
 Next we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular softwares include: MACS, PeakSeq, SICER, CCAT, etc. From here, your data can be visualized on a genome browser. 
 
-<img src="/assets/ChIP_Visualization.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Visualization.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
 We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed. 
