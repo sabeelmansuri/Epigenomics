@@ -186,12 +186,12 @@ Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Seq.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
-Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells<sup>11</sup>. We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites?
+Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells<sup>12</sup>. We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites?
 
 We know that histone acetylation happens when acetyl group attaches to the histone tails of certain proteins by HAT. So by using ChIP, we can find where on our DNA sequence these acetyl groups are using protein specific antibodies in our case, we will use anti-histone H3K27ac.
 
 #### Lab Technique
-Here is the basic protocol for both samples<sup>6</sup>:
+Here is the basic protocol for both samples<sup>7</sup>:
 
 1. Crosslink cells with formaldehyde 
 2. Isolate and shear DNA into chromatin fragments 
@@ -208,23 +208,23 @@ Before jumping into the fun stuff we must:
 1. Clean the raw reads by removing adaptors and PCR duplicates
 2. Computationally align fragments to the reference genome 
 
-Next we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular softwares include: MACS, PeakSeq, SICER, CCAT, etc. From here, your data can be visualized on a genome browser. 
+Next we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular softwares include: MACS, PeakSeq, SICER, CCAT, etc<sup>2</sup>. From here, your data can be visualized on a genome browser. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Visualization.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
-We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed<sup>11</sup>. 
+We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed<sup>12</sup>. 
 
 ### II. Mass Spectrometry
 #### Overview
-Mass Spectrometry [MS] gives us an unbiased quantitative analysis of post-translational histone modifications. Unlike ChIP-seq, MS is designed to output a large variety of histone modifications and their relative abundance within a single analysis. However, this method involves more wet-lab preparation. The bottoms-up method is the most popular method, in which intact proteins are digested into short peptides for nano-liquid chromatography and mass spectroscopy.
+Mass Spectrometry [MS] gives us an unbiased quantitative analysis of post-translational histone modifications. Unlike ChIP-seq, MS is designed to output a large variety of histone modifications and their relative abundance within a single analysis. However, this method involves more wet-lab preparation. The bottoms-up method is the most popular method, in which intact proteins are digested into short peptides for nano-liquid chromatography and mass spectroscopy<sup>9</sup>.
 
-Let’s take an example: We want to analyze histones from human embryonic stem cells (hESCs) with and without retinoic acid (important in cell growth, differentiation, and organogenesis). From this we want to figure out the relative abundance of histone modified peptides. 
+Let’s take an example: We want to analyze histones from human embryonic stem cells (hESCs) with and without retinoic acid (important in cell growth, differentiation, and organogenesis). From this we want to figure out the relative abundance of histone modified peptides<sup>9</sup>. 
 
 Because of the sophistication of the lab protocol, we will not be focusing on the biology of the lab technique, however we have simplified it below.
 
 #### Lab Technique
-Here is the basic protocol: 
+Here is the basic protocol<sup>9</sup>: 
 1. Harvest cells of interest and isolate the nuclei 
 2. Perform histone purification 
 3. Perform histone variant fractionation
@@ -242,16 +242,16 @@ We will import these raw files into a software to perform peak area integration.
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Mass_Spec1.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
-Using these ion chromatograms, we can find the area under the curve to estimate the abundance of each peptide. To find the relative abundance of a modification, we have to sum up all of the different modified forms of the peptide, and divide by the total area for that peptide.  So, using tools like Mascot, we can find the relative abundance of a specific peptide by dividing its area by the total area of all of the modifications.
+Using these ion chromatograms, we can find the area under the curve to estimate the abundance of each peptide. To find the relative abundance of a modification, we have to sum up all of the different modified forms of the peptide, and divide by the total area for that peptide.  So, using tools like Mascot, we can find the relative abundance of a specific peptide by dividing its area by the total area of all of the modifications<sup>9</sup>.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Mass_Spec2.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
 In figure A, we can see the relative quantification of the histone H3 peptide KQLATKAAR (aa 18 - 26). 
 In figure B, we can see the relative quantification of the histone H3 peptide KSTGGKAPR (aa 9 - 17). 
-In figure C, we can see the relative abundance of detected peptides for histone H3 with and without cell treatment with retinoic acid. 
+In figure C, we can see the relative abundance of detected peptides for histone H3 with and without cell treatment with retinoic acid<sup>9</sup>. 
 
-From these images, we can see that hESCs had a reduction of acetylated peptides when stimulated for differentiation. This data only shows the 35 modified forms of histone H3 that were quantified. However, MS has the power to more than 200 proteoforms, including all variants and low abundant modifications!
+From these images, we can see that hESCs had a reduction of acetylated peptides when stimulated for differentiation. This data only shows the 35 modified forms of histone H3 that were quantified<sup>9</sup>. However, MS has the power to more than 200 proteoforms, including all variants and low abundant modifications!
 
 ### Review of Histone Modification Analysis Techniques
 The most popular method of analyzing histone methylation method is ChIP-seq. It is a very powerful tool to analyze protein interactions with DNA, and is perfectly applicable to find and quantify histone modifications. 
