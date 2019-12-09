@@ -171,7 +171,12 @@ A better method would be one that uses continual measurement of methylation inst
 
 ## Analysis Techniques: Histone Modifications
 ### Background
-More to come--researching!
+The goal of histone modification analysis is simply to identify the levels of modification or locate where on the genome these modifications are being made. 
+
+In this section we will explore two popular techniques to do so: 
+
+1. ChIP-seq is utilized to study site-specific modifications
+2. Mass Spectrometry (MS) precisely compares global levels of specific modifications among different samples. 
 
 ### I. ChIP-Seq
 #### Overview
@@ -212,7 +217,7 @@ We can clearly see that the bottom two rows (clear cell renal carcinoma) are hig
 
 ### II. Mass Spectrometry
 #### Overview
-Mass Spectrometry [MS] gives us an unbiased quantitative analysis of post-translational histone modifications. Unlike ChIP-seq, MS is designed to output a large variety of histone modifications and their relative abundance within a single analysis. However, this method involves more wet-lab preparation. The bottoms-up method is the most popular method, in which intact proteins are digested into short peptides for nano-liquid chromatography and mass spectroscopy.<sup>9</sup>
+Mass Spectrometry (MS) gives us an unbiased quantitative analysis of post-translational histone modifications. Unlike ChIP-seq, MS is designed to output a large variety of histone modifications and their relative abundance within a single analysis. However, this method involves more wet-lab preparation. The bottoms-up method is the most popular method, in which intact proteins are digested into short peptides for nano-liquid chromatography and mass spectroscopy.<sup>9</sup>
 
 Let’s take an example: We want to analyze histones from human embryonic stem cells (hESCs) with and without retinoic acid (important in cell growth, differentiation, and organogenesis). From this we want to figure out the relative abundance of histone modified peptides.<sup>9</sup> 
 
@@ -249,9 +254,9 @@ In figure C, we can see the relative abundance of detected peptides for histone 
 From these images, we can see that hESCs had a reduction of acetylated peptides when stimulated for differentiation. This data only shows the 35 modified forms of histone H3 that were quantified.<sup>9</sup> However, MS has the power to more than 200 proteoforms, including all variants and low abundant modifications!
 
 ### Review of Histone Modification Analysis Techniques
-The most popular method of analyzing histone methylation method is ChIP-seq. It is a very powerful tool to analyze protein interactions with DNA, and is perfectly applicable to find and quantify histone modifications. 
+The most popular method of analyzing histone methylation method is ChIP-seq. It is a very powerful tool to analyze protein interactions with DNA, and is perfectly applicable to find and quantify histone modifications. However, this technique has a low throughput and bias against hyper modified proteins. Alternatively, although more tedious mass spectrometry is more precise, returning the relative abundance of several histone variants on a global level in a single analysis.
 
-However, this technique has a low throughput and bias against hyper modified proteins. Alternatively, although more tedious, mass spectrometry is more precise when returning the relative abundance of several histone variants in a single analysis.
+The analysis of histone modifications is becoming increasingly prevalent in cancer, pathology, and developmental research as well as precision medicine. With the immergence of these new technologies and research, we can expect exciting, innovative approaches to medicine and healthcare.  
 
 ## Citations
 1. [Darst, Russell P et al. “Bisulfite sequencing of DNA.” Current protocols in molecular biology vol. Chapter 7 (2010): Unit 7.9.1-17. doi:10.1002/0471142727.mb0709s91.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214597/#S2title)  
