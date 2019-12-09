@@ -34,14 +34,29 @@ In human genome, there are around 25,000 CpG islands, about half of which contai
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/CpG_TF_Blocking.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
-### II. Supporting Protein
-The addition of the methyl group is modified in diffrent levels in body with work of protein family called DNA methyltransferases (DNMTs). There are three types of DNMTs including DNMT1, DNMT3a and DNMT3b. Those three DNMTs are required for establishment and keeping the DNA methylation patterns. Another two proteins in DNMT family, DNMT2 and DNMT3L, also doing some related but more specific work in methylation. DNMT3a and 3b works in establish of new or de novo methylation while DNMT1 works to do the maintenance work for already established methylation.
+### II. Repression Mechanism
+In fact, there are two ways in which the methylation of a CpG island near a transcription start site may inhibit gene expression: Steric Bulk and Protein Binding.
+
+#### Steric Bulk
+The addition of a methyl group to cytosines increases the steric bulk of the molecule. Specifically, the addition of a CH3 group adds a physical barrier that functions as a guard for the grooves in the double helical structure of the DNA. 
+
+Because these grooves are critical for protein specificity recognition, the bulk created by the methyl group inhibits the binding of transcription factors and, therefore, downstream gene expression.
+
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Steric_Bulk.png" width=450px/>
+<i><b>Figure</b> caption here</i>
+
+#### Protein Binding
+There exist proteins that bind to CpG motifs if and only if they are methylated. These proteins are denoted “Methyl-CpG-binding domain proteins” (MBDs). MBD binding innately amplifies the steric hinderance mentioned above.
+
+Their main repressional mechanism, however, is not steric. Rather, MDBs recruit histone deacetylases, proteins which remove acetyl groups from histones. (As we’ll see below, acetyl groups binding to histones relaxes chromatin condensation, making DNA more accessible for transcription factors.) In turn, chromatin condenses and transcription is significantly repressed. 
 
 ### III. Case Study: DNA Methylation + Cancer
-DNA methylation is one of the important driver for the cancer development. In cancer cells, CpG islands are abnormally hypermethylated, which lead to silences of genes including tumor suppressor gene. Also, there are hypomethylation in some oncogenes. Those abnormal methylation would be able to be inherited by daughter cells, which would lead to growth of tumor. Moreover, microRNA expression in tumor cells is also altered a lot from normal cells.
+To underscore the importance of DNA methylation on a broader scale, we mention its application with respect to cancer. Specifically, DNA hypermethylation of CpG islands near tumor suppressor genes has been observed in cancerous cells. At the same time, oncogenes are often found with abnormally low DNA methylation levels, leading to their overexpression. As these improper methylation patterns proliferate through cell division, a tumor can form.
 
-### IV. Case Study: DNA Methylation + Aging
-Epigenetic Clock is a major of age from DNA methylation level in human body. There was a longitudinal study with two genetically identical twins, which showed that methylation patterns changed and diverged a lot because of environment even in childhood. Also other studies show that DNA methylation level of some genes, like CD4+ T cells, will change proportionally to the age. DNA methylation is one of the keys to unravel the mystery of aging of human.
+An upside for this correlation, however, is that observing this pattern in tumor cells has opened the door for epigenetic treatment. There are currently drugs available that specifically target demethylation of tumor suppressor gene hypermethylation, and more are in development.
+
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Methylation_Cancer.png" width=450px/>
+<i><b>Figure</b> caption here</i>
 
 ## Biology: Histone Modifications
 ### Introduction
