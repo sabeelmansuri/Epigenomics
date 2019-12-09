@@ -1,33 +1,33 @@
 <img src="https://i.imgur.com/UHs2ojK.png" width=300px/>
 
 ## Overview
-In examining the diversity of life, we're often directed to the sequence of an organism's DNA as the source of variation. Differences in these genomes are directly correlated with changes in genetic products, regulatory affects, and molecular interactions--all of which contribute to the great phenotypic variety observed in our world.
+In examining the diversity of life, we're often directed to the sequence of an organism's DNA as the source of variation. Differences in these genomes are directly correlated with changes in genetic products, regulatory effects, and molecular interactions--all of which contribute to the great phenotypic variation observed in our world.
 
 However, in this paper, we wish to look beyond the genome. Instead, we introduce the topic of epigenomics, the analysis of gene expression that is not attributable to mutations to the DNA sequence of a genome. Rather, epigenetic expression alteration is caused by biochemical interactions with various proteins and other compounds.
 
-We will breifly describe the biology of the two most well-known epigenomic modifications: [DNA Methylation](#Biology-DNA-Methylation) and [Histone Modifications](#Biology-Histone-Modifications). Then, we will describe in detail the analytical techniques and technologies used to quantify each epigenomic modification.
+We will briefly describe the biology of the two most well-known epigenomic modifications: [DNA Methylation](#Biology-DNA-Methylation) and [Histone Modifications](#Biology-Histone-Modifications). Then, we will describe in detail the analytical techniques and technologies used to quantify each epigenomic modification.
 
 ## Biology: DNA Methylation
 ### Introduction
 The first epigenomic modification discovered was DNA methylation. Uncovered as early as when Rollin Hotchkiss formalized the notion of DNA being the genetic material (1984), DNA methylation remains one of the most influential epigenomic modifications today.<sup>13</sup>
 
-On the surface, it appears to be a simplistic process. DNA methyltransferases (DNMTs) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA. As we'll see, this simple change can have an astronomic affect. First, some basics.
+On the surface, it appears to be a simplistic process. DNA methyltransferases (DNMTs) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA. As we'll see, this simple change can have an astronomic effect. First, some basics.
 
 ### I. CpG Islands
-As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site.<sup>3</sup> CpG sites are often grouped together in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.<sup>3</sup>
+As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site.<sup>3</sup> CpG sites are often grouped in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.<sup>3</sup>
 
 For a region to be considered a CpG island, it must have:
 1. A sequence length longer than 200bp
 2. A GC content of more than 50%
 3. A statistical ratio of observed/expected CpG (cytosine followed by guanine) greater than 0.6
 
-In human genome, there are around 25,000 such CpG islands, about half of which contain transcription start sites.<sup>3</sup> Such CpG islands can directly influence expression levels, which we'll explore next.
+In the human genome, there are around 25,000 such CpG islands, about half of which contain transcription start sites.<sup>3</sup> Such CpG islands can directly influence expression levels, which we'll explore next.
 
 ### II. Repression Mechanism
 In fact, there are two ways in which the methylation of a CpG island near a transcription start site may inhibit gene expression: Steric Bulk and Protein Binding.
 
 #### Steric Bulk
-The addition of a methyl group to cytosines increases the steric bulk of the molecule. Specifically, the addition of a CH<sub>3</sub> group adds a physical barrier that functions as a guard for the grooves in the double helical structure of the DNA.<sup>13</sup> 
+The addition of a methyl group to cytosines increases the steric bulk of the molecule. Specifically, the addition of a CH<sub>3</sub> group adds a physical barrier that functions as a guard for the grooves in the double-helical structure of the DNA.<sup>13</sup> 
 
 Because these grooves are critical for protein specificity recognition, the bulk created by the methyl group inhibits the binding of transcription factors and, therefore, downstream gene expression.
 
@@ -37,7 +37,7 @@ Because these grooves are critical for protein specificity recognition, the bulk
 #### Protein Binding
 There exist proteins that bind to CpG motifs if and only if they are methylated. These proteins are denoted “Methyl-CpG-binding domain proteins” (MBDs).<sup>3</sup> MBD binding innately amplifies the steric hinderance mentioned above.
 
-Their main repressional mechanism, however, is not steric. Rather, MDBs recruit histone deacetylases, proteins which remove acetyl groups from histones. (As we’ll see below, acetyl groups binding to histones relaxes chromatin condensation, making DNA more accessible for transcription factors.) In turn, chromatin condenses and transcription is significantly repressed. 
+Their main repressional mechanism, however, is not steric. Rather, MDBs recruit histone deacetylases, proteins that remove acetyl groups from histones. (As we’ll see below, acetyl groups binding to histones relaxes chromatin condensation, making DNA more accessible for transcription factors.) In turn, chromatin condenses and transcription is significantly repressed. 
 
 ### III. Case Study: DNA Methylation + Cancer
 To underscore the importance of DNA methylation on a broader scale, we mention its application with respect to cancer.<sup>11</sup> Specifically, DNA hypermethylation of CpG islands near tumor suppressor genes has been observed in cancerous cells. At the same time, oncogenes are often found with abnormally low DNA methylation levels, leading to their overexpression. As these improper methylation patterns proliferate through cell division, a tumor can form.
@@ -69,7 +69,7 @@ Unlike histone acetylation, methylation is a post-translational epigenetic modif
 <i><b>Figure 5</b> Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.</i>
 
 ### III. Histone Phosphorylation
-Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair.<sup>10</sup>
+Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occurring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair.<sup>10</sup>
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Phosphorylation.png" width=450px/>
 <i><b>Figure 6</b> One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.</i>
@@ -78,16 +78,16 @@ Unique from histone methylation and acetylation, histone phosphorylation employs
 ### Background
 The goal of DNA Methylation analysis is fairly obvious: we wish to detect what parts of the genome are methylated to identify, confirm, or analyze downregulated regions.
 
-Let's take an example: We have two bacterial samples that should both be expressing a gene that turns them blue. However, one culture appears blue while the other appears white. Given what we've learned, we may hypothesize that, for some reason, the white colony of bacteria have methylated the region containing the gene, thus downregulating it. How can we test this hypothesis?
+Let's take an example: We have two bacterial samples that should both be expressing a gene that turns them blue. However, one culture appears blue while the other appears white. Given what we've learned, we may hypothesize that, for some reason, the white colony of bacteria has methylated the region containing the gene, thus downregulating it. How can we test this hypothesis?
 
-Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**.<sup>5</sup> Therefore, we require other analysis technqiues, one that allows us to differentiate between these two:
+Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**.<sup>5</sup> Therefore, we require other analysis techniques, one that allows us to differentiate between these two:
 
 ### I. Bisulfite Sequencing
 #### Overview
 Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique.<sup>1</sup> The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected during sequencing as thymine, so every detected cytosine will be a methylated cytosine, giving a clear indication of which regions are methylated.<sup>1</sup>
 
 ![Bisulfite Conversion](https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Bisulfite_Conversion.png)  
-<i><b>Figure 7</b> The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.</i>
+<i><b>Figure 7</b> The conversion of non-methylated cytosines into uracils, which are read as thymines by sequencing technology. Notice that methylated cytosines are unchanged and remain sequenced as cytosines.</i>
 
 #### Lab Technique
 The first milestone in a bisulfite sequencing analysis is the treatment of DNA with [bisulfite](https://en.wikipedia.org/wiki/Bisulfite). There are three major steps<sup>1</sup> in this protocol:
@@ -96,7 +96,7 @@ The first milestone in a bisulfite sequencing analysis is the treatment of DNA w
 2. Incubation with bisulfite solution at high temperature
 3. Cleaning of DNA; removal of bisulfite and residues
 
-The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) (WGBS) is becoming increasingly viable, it is not yet a common method. Thus, we will only describe the lab technique for region-specific analysis. However, we will mention one WGBS analysis method [below](#Bonus---Whole-Genome-Bisulfite-Sequencing-Analysis).
+The product of this will be DNA with non-methylated cytosine converted into uracil. Although [whole-genome bisulfite sequencing](https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing) (WGBS) is becoming increasingly viable, it is not yet a common method. Thus, we will only describe the lab technique for region-specific analysis. However, we will mention one WGBS analysis method [below](#Bonus---Whole-Genome-Bisulfite-Sequencing-Analysis).
 
 Having used bisulfite to convert all non-methylated cytosine to uracil, the next step is to use a [Polymerase Chain Reaction](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (PCR) to amplify the region of interest. Traditionally, primers must be selected carefully (such as selecting for low cytosine or non-CpG island rich areas) so potentially converted cytosine do not inhibit PCR amplification. Additionally, in parallel, a PCR for the same region is run on DNA that has *not* been treated with bisulfite.
 
@@ -115,7 +115,7 @@ Native:     GCATCTAC
 
 We see the bisulfite sequence identifies the cytosines at positions 2 and 9 as thymines, but the cytosine at position 5 remains a cytosine. We would conclude that the cytosines at positions 2 and 9 were not methylated, while the cytosine at position 2 was.
 
-A related but more interesting analysis than a base-by-base comparison is one that answers, "What areas of this region of interest are methylation-rich?" Tools such as [MethylCoder](https://github.com/brentp/methylcode)<sup>8</sup> provide the answer by aggeregating the results of the base-by-base comparison, determining locales with high aggregate values, and reporting the raw and aggregated results.
+A related but more interesting analysis than a base-by-base comparison is one that answers, "What areas of this region of interest are methylation-rich?" Tools such as [MethylCoder](https://github.com/brentp/methylcode)<sup>8</sup> provide the answer by aggregating the results of the base-by-base comparison, determining locales with high aggregate values, and reporting the raw and aggregated results.
 
 #### Bonus - Whole Genome Bisulfite Sequencing Analysis
 The quintessential question asked of WGBS is, "What regions of the whole genome are methylation-rich?"<sup>5</sup> Here, the data required for analysis are slightly different than before:
@@ -140,7 +140,7 @@ The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverag
 
 Two restriction enzymes are used:
 1. HpaII, which cuts DNA at `CCGA` sites where the inner cytosine is *not* methylated
-2. MspI, which cuts DNA at `CCGA` sites regardless of cytosine methlyation
+2. MspI, which cuts DNA at `CCGA` sites regardless of cytosine methylation
 
 This results in MspI cutting DNA into some number of additional fragments compared to HpaII, and calculating the magnitude of this difference provides a relative measurement of DNA methylation.
 
@@ -148,9 +148,9 @@ This results in MspI cutting DNA into some number of additional fragments compar
 <i><b>Figure 9</b> Overview of two (similar) variations of the HELP assay. Our focus is on the left protocol</i>
 
 #### Lab Technique
-Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI digestion.<sup>6</sup> We assume the HpaII sample has been digested at only `CCGA` sites where the inner cytosine is *not* methylated, resulting in some number of fragments. Additionally, we assume the MspI sample has been digested at all of the sites that HpaII was, but additionally at `CCGA` sites where the inner cytosine *is* methylated.
+Two DNA samples are isolated and, in parallel, subject to either HpaII or MspI digestion.<sup>6</sup> We assume the HpaII sample has been digested at only `CCGA` sites where the inner cytosine is *not* methylated, resulting in some number of fragments. Additionally, we assume the MspI sample has been digested at all of the sites that HpaII was, but additionally at `CCGA` sites where the inner cytosine *is* methylated.
 
-Each sample is then subjected to ligation-mediated PCR (LM-PCR).<sup>6</sup> This protocol first adds linker sequences to every fragment. These sequences are complementary to fluorescently labeledd PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
+Each sample is then subjected to ligation-mediated PCR (LM-PCR).<sup>6</sup> This protocol first adds linker sequences to every fragment. These sequences are complementary to fluorescently labeled PCR primers, so each fragment is amplified without the worry of complementarity/primer specificity. This yields a fluorescently detectable pool of DNA that has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Label_PCR.jpg" width=450px/>
 <i><b>Figure 10</b> Simplified idea of LM-PCR. Note the linker binding, the primer complementarity, and fluorescent label.</i>
@@ -160,7 +160,7 @@ Next, a microarray is set up such that it contains binding sites for expected `C
 #### Computational Analysis
 One of the key benefits of this technique is that it's fairly light on dry-lab analysis. Though results are generally more qualitative and inexact, it is a far simpler and easier protocol than bisulfite sequencing.
 
-However, there have been attempts to increase the quantitative power of the assay. A data analysis pipeline in R was developed to take signal intensity data of the microarrays and run various normalizations and to quantify the differences. This pipeline, hoever, is *not* packaged as a tool, but contains a series of computational steps in R that are beyond the scope of this introductory epigenomics lesson. The detailed paper, however, is linked [here](https://academic.oup.com/bioinformatics/article/24/9/1161/207143) for reference.
+However, there have been attempts to increase the quantitative power of the assay. A data analysis pipeline in R was developed to take signal intensity data of the microarrays and run various normalizations and to quantify the differences. This pipeline, however, is *not* packaged as a tool, but contains a series of computational steps in R that are beyond the scope of this introductory epigenomics lesson. The detailed paper, however, is linked [here](https://academic.oup.com/bioinformatics/article/24/9/1161/207143) for reference.
 
 ### Review of DNA Methylation Analysis Techniques
 As mentioned before, bisulfite sequencing generally provides more quantifiably solid results than the HELP assay, but also requires greater wetlab and computational power.<sup>5</sup> Indeed, the computational tools for bisulfite sequencing are plentiful, and will generate robust analyses. However, the HELP assay provides a great low-effort alternative for determining DNA methylation levels in a generic context.
@@ -181,9 +181,9 @@ Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Seq.png" width=450px/>
 <i><b>Figure 11</b> Wetlab protocol for ChIP-Seq.</i>
 
-Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells.<sup>12</sup> We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites?
+Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells.<sup>12</sup> We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites?
 
-We know that histone acetylation happens when acetyl group attaches to the histone tails of certain proteins by HAT. So by using ChIP, we can find where on our DNA sequence these acetyl groups are using protein specific antibodies in our case, we will use anti-histone H3K27ac.
+We know that histone acetylation happens when acetyl group attaches to the histone tails of certain proteins by HAT. So by using ChIP, we can find where on our DNA sequence these acetyl groups are using protein-specific antibodies in our case, we will use anti-histone H3K27ac.
 
 #### Lab Technique
 Here is the basic protocol<sup>7</sup> for both samples:
@@ -203,12 +203,12 @@ Before jumping into the fun stuff we must:
 1. Clean the raw reads by removing adaptors and PCR duplicates
 2. Computationally align fragments to the reference genome 
 
-Next we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular softwares include: MACS, PeakSeq, SICER, CCAT, etc.<sup>2</sup> From here, your data can be visualized on a genome browser. 
+Next, we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular software include: MACS, PeakSeq, SICER, CCAT, etc.<sup>2</sup> From here, your data can be visualized on a genome browser. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Visualization.png" width=450px/>
 <i><b>Figure 12</b> Visualization of peak-calling software output on a genome browser.</i>  
 
-We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed.<sup>12</sup> 
+We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this, we can see where and which gene is overexpressed.<sup>12</sup> 
 
 ### II. Mass Spectrometry
 #### Overview
