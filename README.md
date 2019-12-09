@@ -45,14 +45,14 @@ Epigenetic Clock is a major of age from DNA methylation level in human body. The
 
 ## Biology: Histone Modifications
 ### Introduction
-Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications to chromatin structure along with epigenetic markers influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.
+Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications to chromatin structure along with epigenetic markers influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression<sup>9</sup>.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Background.png" width=450px/>
 <i><b>Figure</b> General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.</i>
 
 
 ### I. Histone Acetylation
-Acetylation connects a negative charge acetyl group to lysine residues of the N-terminal histone tails (specifically H3 and H4) by histone acetyltransferase (HAT). By doing so, negatively charged DNA is repelled, causing the chromatin to relax into euchromatin and allow for transcription factors to bind and increase gene expression. Deacetylation by histone deacetylase (HDAC) however condenses chromatin into heterochromatin, therefore deactivating gene activity.
+Acetylation connects a negative charge acetyl group to lysine residues of the N-terminal histone tails (specifically H3 and H4) by histone acetyltransferase (HAT)<sup>10</sup>. By doing so, negatively charged DNA is repelled, causing the chromatin to relax into euchromatin and allow for transcription factors to bind and increase gene expression. Deacetylation by histone deacetylase (HDAC) however condenses chromatin into heterochromatin, therefore deactivating gene activity<sup>7</sup>.
 
 <br />
 
@@ -60,13 +60,13 @@ Acetylation connects a negative charge acetyl group to lysine residues of the N-
 <i><b>Figure</b> Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.</i>
 
 ### II. Histone Methylation/Demethylation
-Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression. 
+Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length<sup>10</sup>. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression<sup>7</sup>. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Methylation.png" width=450px/>
 <i><b>Figure</b> Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.</i>
 
 ### III. Histone Phosphorylation
-Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair. 
+Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair<sup>10</sup>. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Phosphorylation.png" width=450px/>
 <i><b>Figure</b> One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.</i>
@@ -172,18 +172,18 @@ More to come--researching!
 
 ### I. ChIP-Seq
 #### Overview
-Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This can then be used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression.
+Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This can then be used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression<sup>6</sup>.
 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Seq.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
-Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells. We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites? 
+Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells<sup>11</sup>. We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is an acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites?
 
 We know that histone acetylation happens when acetyl group attaches to the histone tails of certain proteins by HAT. So by using ChIP, we can find where on our DNA sequence these acetyl groups are using protein specific antibodies in our case, we will use anti-histone H3K27ac.
 
 #### Lab Technique
-Here is the basic protocol for both samples:
+Here is the basic protocol for both samples<sup>6</sup>:
 
 1. Crosslink cells with formaldehyde 
 2. Isolate and shear DNA into chromatin fragments 
@@ -205,7 +205,7 @@ Next we use peak-calling which utilizes different algorithms that identify regio
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Visualization.png" width=450px/>
 <i><b>Figure</b> caption here</i>
 
-We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed. 
+We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed<sup>11</sup>. 
 
 ### II. Mass Spectrometry
 #### Overview
@@ -252,13 +252,14 @@ However, this technique has a low throughput and bias against hyper modified pro
 
 ## Citations
 1. [Darst, Russell P et al. “Bisulfite sequencing of DNA.” Current protocols in molecular biology vol. Chapter 7 (2010): Unit 7.9.1-17. doi:10.1002/0471142727.mb0709s91.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214597/#S2title)  
-2. [Gardiner-Garden M, Frommer M. "CpG islands in vertebrate genomes". Journal of Molecular Biology. 196 (2): 261–82. July 1987. doi:10.1016/0022-2836(87)90689-9.](https://www.sciencedirect.com/science/article/pii/0022283687906899?via%3Dihub)
-3. [Krainer, Julie, et al. “EPIC-TABSAT: Analysis Tool for Targeted Bisulfite Sequencing Experiments and Array-Based Methylation Studies.” Nucleic Acids Research, vol. 47, no. W1, 2019, doi:10.1093/nar/gkz398.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602470/)
-4. [Kurdyukov, Sergey, and Martyn Bullock. “DNA Methylation Analysis: Choosing the Right Method.” Biology vol. 5,1 3. 6 Jan. 2016, doi:10.3390/biology5010003.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4810160/)  
-5. [Oda, Mayumi, and John M. Greally. “The Help Assay.” Methods in Molecular Biology DNA Methylation, 2009, pp. 77–87., doi:10.1007/978-1-59745-522-0_7.](https://link.springer.com/10.1007/978-1-59745-522-0_7)
-6. [O'Geen, Henriette et al. “Using ChIP-seq technology to generate high-resolution profiles of histone modifications.” Methods in molecular biology (Clifton, N.J.) vol. 791 (2011): 265-86. doi:10.1007/978-1-61779-316-5_20](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4151291/)
-7. [Pedersen, B., et al. “MethylCoder: Software Pipeline for Bisulfite-Treated Sequences.” Bioinformatics, vol. 27, no. 17, 2011, pp. 2435–2436., doi:10.1093/bioinformatics/btr394.](https://www.ncbi.nlm.nih.gov/pubmed/21724594)
-8. [Sidoli, Simone et al. “Complete Workflow for Analysis of Histone Post-translational Modifications Using Bottom-up Mass Spectrometry: From Histone Extraction to Data Analysis.” Journal of visualized experiments : JoVE ,111 54112. 17 May. 2016, doi:10.3791/54112](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927705/)
-9. [Strahl, B., Allis, C. The language of covalent histone modifications. Nature 403, 41–45 (2000) doi:10.1038/47412](https://www.nature.com/articles/47412)
-10. [Thompson, Reid F., et al. “An Analytical Pipeline for Genomic Representations Used for Cytosine Methylation Studies.” Bioinformatics, vol. 24, no. 9, 2008, pp. 1161–1167., doi:10.1093/bioinformatics/btn096.](https://www.ncbi.nlm.nih.gov/pubmed/18353789)
-11. [Yao et al. (2017). VHL Deficiency Drives Enhancer Activation of Oncogenes in Clear Cell Renal Cell Carcinoma. Cancer Discovery. 7. CD-17. 10.1158/2159-8290.CD-17-0375.](https://www.ncbi.nlm.nih.gov/pubmed/28893800)
+2. [Diaz, Aaron et al. “Normalization, bias correction, and peak calling for ChIP-seq.” Statistical applications in genetics and molecular biology vol. 11,3 Article 9. 31 Mar. 2012, doi:10.1515/1544-6115.1750](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342857/)
+3. [Gardiner-Garden M, Frommer M. "CpG islands in vertebrate genomes". Journal of Molecular Biology. 196 (2): 261–82. July 1987. doi:10.1016/0022-2836(87)90689-9.](https://www.sciencedirect.com/science/article/pii/0022283687906899?via%3Dihub)
+4. [Krainer, Julie, et al. “EPIC-TABSAT: Analysis Tool for Targeted Bisulfite Sequencing Experiments and Array-Based Methylation Studies.” Nucleic Acids Research, vol. 47, no. W1, 2019, doi:10.1093/nar/gkz398.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602470/)
+5. [Kurdyukov, Sergey, and Martyn Bullock. “DNA Methylation Analysis: Choosing the Right Method.” Biology vol. 5,1 3. 6 Jan. 2016, doi:10.3390/biology5010003.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4810160/)  
+6. [Oda, Mayumi, and John M. Greally. “The Help Assay.” Methods in Molecular Biology DNA Methylation, 2009, pp. 77–87., doi:10.1007/978-1-59745-522-0_7.](https://link.springer.com/10.1007/978-1-59745-522-0_7)
+7. [O'Geen, Henriette et al. “Using ChIP-seq technology to generate high-resolution profiles of histone modifications.” Methods in molecular biology (Clifton, N.J.) vol. 791 (2011): 265-86. doi:10.1007/978-1-61779-316-5_20](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4151291/)
+8. [Pedersen, B., et al. “MethylCoder: Software Pipeline for Bisulfite-Treated Sequences.” Bioinformatics, vol. 27, no. 17, 2011, pp. 2435–2436., doi:10.1093/bioinformatics/btr394.](https://www.ncbi.nlm.nih.gov/pubmed/21724594)
+9. [Sidoli, Simone et al. “Complete Workflow for Analysis of Histone Post-translational Modifications Using Bottom-up Mass Spectrometry: From Histone Extraction to Data Analysis.” Journal of visualized experiments : JoVE ,111 54112. 17 May. 2016, doi:10.3791/54112](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927705/)
+10. [Strahl, B., Allis, C. The language of covalent histone modifications. Nature 403, 41–45 (2000) doi:10.1038/47412](https://www.nature.com/articles/47412)
+11. [Thompson, Reid F., et al. “An Analytical Pipeline for Genomic Representations Used for Cytosine Methylation Studies.” Bioinformatics, vol. 24, no. 9, 2008, pp. 1161–1167., doi:10.1093/bioinformatics/btn096.](https://www.ncbi.nlm.nih.gov/pubmed/18353789)
+12. [Yao et al. (2017). VHL Deficiency Drives Enhancer Activation of Oncogenes in Clear Cell Renal Cell Carcinoma. Cancer Discovery. 7. CD-17. 10.1158/2159-8290.CD-17-0375.](https://www.ncbi.nlm.nih.gov/pubmed/28893800)
