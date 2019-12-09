@@ -11,7 +11,7 @@ We will breifly describe the biology of the two most well-known epigenomic modif
 ### Introduction
 The first epigenomic modification discovered was DNA methylation. Uncovered as early as when Rollin Hotchkiss formalized the notion of DNA being the genetic material (1984), DNA methylation remains one of the most influential epigenomic modifications today.
 
-On the surface, it appears to be a simplistic process. DNA methyltransferaces (Dnmts) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA. As we'll see, this simple change can have an astronomic affect. First, some basics.
+On the surface, it appears to be a simplistic process. DNA methyltransferases (DNMTs) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA. As we'll see, this simple change can have an astronomic affect. First, some basics.
 
 ### I. CpG Islands
 As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site. CpG sites are often grouped together in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.
@@ -25,14 +25,7 @@ For a region to be considered a CpG island, it must have:
 2. A G+C content of more than 50%
 3. A statistical ratio of observed/expected CpG (cytosine followed by guanine) greater than 0.6
 
-In human genome, there are around 25,000 CpG islands, about half of which contain transcription start sites. Such CpG islands can directly influence expression levels by the following mechanism:
-
-1. CpG islands are methlyated, adding steric bulk
-2. The added steric bulk blocks transcription factor binding, preventing transcription
-3. Reduced transcription leads to reduced expression levels
-
-<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/CpG_TF_Blocking.png" width=450px/>
-<i><b>Figure</b> caption here</i>
+In human genome, there are around 25,000 such CpG islands, about half of which contain transcription start sites. Such CpG islands can directly influence expression levels, which we'll explore next.
 
 ### II. Repression Mechanism
 In fact, there are two ways in which the methylation of a CpG island near a transcription start site may inhibit gene expression: Steric Bulk and Protein Binding.
