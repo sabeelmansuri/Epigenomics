@@ -9,25 +9,25 @@ We will breifly describe the biology of the two most well-known epigenomic modif
 
 ## Biology: DNA Methylation
 ### Introduction
-The first epigenomic modification discovered was DNA methylation. Uncovered as early as when Rollin Hotchkiss formalized the notion of DNA being the genetic material (1984), DNA methylation remains one of the most influential epigenomic modifications today.
+The first epigenomic modification discovered was DNA methylation. Uncovered as early as when Rollin Hotchkiss formalized the notion of DNA being the genetic material (1984), DNA methylation remains one of the most influential epigenomic modifications today.<sup>13</sup>
 
 On the surface, it appears to be a simplistic process. DNA methyltransferases (DNMTs) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA. As we'll see, this simple change can have an astronomic affect. First, some basics.
 
 ### I. CpG Islands
-As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site. CpG sites are often grouped together in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.
+As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site.<sup>3</sup> CpG sites are often grouped together in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.<sup>3</sup>
 
 For a region to be considered a CpG island, it must have:
 1. A sequence length longer than 200bp
 2. A GC content of more than 50%
 3. A statistical ratio of observed/expected CpG (cytosine followed by guanine) greater than 0.6
 
-In human genome, there are around 25,000 such CpG islands, about half of which contain transcription start sites. Such CpG islands can directly influence expression levels, which we'll explore next.
+In human genome, there are around 25,000 such CpG islands, about half of which contain transcription start sites.<sup>3</sup> Such CpG islands can directly influence expression levels, which we'll explore next.
 
 ### II. Repression Mechanism
 In fact, there are two ways in which the methylation of a CpG island near a transcription start site may inhibit gene expression: Steric Bulk and Protein Binding.
 
 #### Steric Bulk
-The addition of a methyl group to cytosines increases the steric bulk of the molecule. Specifically, the addition of a CH3 group adds a physical barrier that functions as a guard for the grooves in the double helical structure of the DNA. 
+The addition of a methyl group to cytosines increases the steric bulk of the molecule. Specifically, the addition of a CH<sub>3</sub> group adds a physical barrier that functions as a guard for the grooves in the double helical structure of the DNA.<sup>13</sup> 
 
 Because these grooves are critical for protein specificity recognition, the bulk created by the methyl group inhibits the binding of transcription factors and, therefore, downstream gene expression.
 
@@ -35,12 +35,12 @@ Because these grooves are critical for protein specificity recognition, the bulk
 <i><b>Figure 1</b> Overview of steric hinderance caused by methylation of DNA, resulting in transcriptional repression.</i>
 
 #### Protein Binding
-There exist proteins that bind to CpG motifs if and only if they are methylated. These proteins are denoted “Methyl-CpG-binding domain proteins” (MBDs). MBD binding innately amplifies the steric hinderance mentioned above.
+There exist proteins that bind to CpG motifs if and only if they are methylated. These proteins are denoted “Methyl-CpG-binding domain proteins” (MBDs).<sup>3</sup> MBD binding innately amplifies the steric hinderance mentioned above.
 
 Their main repressional mechanism, however, is not steric. Rather, MDBs recruit histone deacetylases, proteins which remove acetyl groups from histones. (As we’ll see below, acetyl groups binding to histones relaxes chromatin condensation, making DNA more accessible for transcription factors.) In turn, chromatin condenses and transcription is significantly repressed. 
 
 ### III. Case Study: DNA Methylation + Cancer
-To underscore the importance of DNA methylation on a broader scale, we mention its application with respect to cancer. Specifically, DNA hypermethylation of CpG islands near tumor suppressor genes has been observed in cancerous cells. At the same time, oncogenes are often found with abnormally low DNA methylation levels, leading to their overexpression. As these improper methylation patterns proliferate through cell division, a tumor can form.
+To underscore the importance of DNA methylation on a broader scale, we mention its application with respect to cancer.<sup>11</sup> Specifically, DNA hypermethylation of CpG islands near tumor suppressor genes has been observed in cancerous cells. At the same time, oncogenes are often found with abnormally low DNA methylation levels, leading to their overexpression. As these improper methylation patterns proliferate through cell division, a tumor can form.
 
 An upside for this correlation, however, is that observing this pattern in tumor cells has opened the door for epigenetic treatment. There are currently drugs available that specifically target demethylation of tumor suppressor gene hypermethylation, and more are in development.
 
@@ -258,7 +258,7 @@ However, this technique has a low throughput and bias against hyper modified pro
 2. [Diaz, Aaron et al. “Normalization, bias correction, and peak calling for ChIP-seq.” Statistical applications in genetics and molecular biology vol. 11,3 Article 9. 31 Mar. 2012, doi:10.1515/1544-6115.1750](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342857/)
 3. [Gardiner-Garden M, Frommer M. "CpG islands in vertebrate genomes". Journal of Molecular Biology. 196 (2): 261–82. July 1987. doi:10.1016/0022-2836(87)90689-9.](https://www.sciencedirect.com/science/article/pii/0022283687906899?via%3Dihub)
 4. [Krainer, Julie, et al. “EPIC-TABSAT: Analysis Tool for Targeted Bisulfite Sequencing Experiments and Array-Based Methylation Studies.” Nucleic Acids Research, vol. 47, no. W1, 2019, doi:10.1093/nar/gkz398.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602470/)
-5. [Kurdyukov, Sergey, and Martyn Bullock. “DNA Methylation Analysis: Choosing the Right Method.” Biology vol. 5,1 3. 6 Jan. 2016, doi:10.3390/biology5010003.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4810160/)  
+5. [Kurdyukov, Sergey, and Martyn Bullock. “DNA Methylation Analysis: Choosing the Right Method.” Biology vol. 5,1 3. 6 Jan. 2016, doi:10.3390/biology5010003.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4810160/)
 6. [Oda, Mayumi, and John M. Greally. “The Help Assay.” Methods in Molecular Biology DNA Methylation, 2009, pp. 77–87., doi:10.1007/978-1-59745-522-0_7.](https://link.springer.com/10.1007/978-1-59745-522-0_7)
 7. [O'Geen, Henriette et al. “Using ChIP-seq technology to generate high-resolution profiles of histone modifications.” Methods in molecular biology (Clifton, N.J.) vol. 791 (2011): 265-86. doi:10.1007/978-1-61779-316-5_20](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4151291/)
 8. [Pedersen, B., et al. “MethylCoder: Software Pipeline for Bisulfite-Treated Sequences.” Bioinformatics, vol. 27, no. 17, 2011, pp. 2435–2436., doi:10.1093/bioinformatics/btr394.](https://www.ncbi.nlm.nih.gov/pubmed/21724594)
@@ -266,3 +266,4 @@ However, this technique has a low throughput and bias against hyper modified pro
 10. [Strahl, B., Allis, C. The language of covalent histone modifications. Nature 403, 41–45 (2000) doi:10.1038/47412](https://www.nature.com/articles/47412)
 11. [Thompson, Reid F., et al. “An Analytical Pipeline for Genomic Representations Used for Cytosine Methylation Studies.” Bioinformatics, vol. 24, no. 9, 2008, pp. 1161–1167., doi:10.1093/bioinformatics/btn096.](https://www.ncbi.nlm.nih.gov/pubmed/18353789)
 12. [Yao et al. (2017). VHL Deficiency Drives Enhancer Activation of Oncogenes in Clear Cell Renal Cell Carcinoma. Cancer Discovery. 7. CD-17. 10.1158/2159-8290.CD-17-0375.](https://www.ncbi.nlm.nih.gov/pubmed/28893800)
+13. [Moore, Lisa D et al. “DNA methylation and its basic function.” Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology vol. 38,1 (2013): 23-38. doi:10.1038/npp.2012.112](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3521964/)
