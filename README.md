@@ -207,14 +207,48 @@ Next we use peak-calling which utilizes different algorithms that identify regio
 
 We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this we can see where and which gene is overexpressed. 
 
-### II.
+### II. Mass Spectrometry
 #### Overview
+Mass Spectrometry [MS] gives us an unbiased quantitative analysis of post-translational histone modifications. Unlike ChIP-seq, MS is designed to output a large variety of histone modifications and their relative abundance within a single analysis. However, this method involves more wet-lab preparation. The bottoms-up method is the most popular method, in which intact proteins are digested into short peptides for nano-liquid chromatography and mass spectroscopy.
+
+Let’s take an example: We want to analyze histones from human embryonic stem cells (hESCs) with and without retinoic acid (important in cell growth, differentiation, and organogenesis). From this we want to figure out the relative abundance of histone modified peptides. 
+
+Because of the sophistication of the lab protocol, we will not be focusing on the biology of the lab technique, however we have simplified it below.
 
 #### Lab Technique
+Here is the basic protocol: 
+1. Harvest cells of interest and isolate the nuclei 
+2. Perform histone purification 
+3. Perform histone variant fractionation
+4. Histone quantification
+5. Histone derivatization using Lysine 
+6. Histone digestion using Trypsin
+7. Propionylation of Histone Peptides at N-termini
+8. Stage-tip desalting 
+
+We will now focus on the computational analyses conducted on these MS raw data files.
 
 #### Computational Analysis
+We will import these raw files into a software to perform peak area integration. Two popular softwares for this are [EpiProfile](https://github.com/zfyuan/EpiProfile2.0_Family) and [Skyline](https://skyline.ms/project/home/software/Skyline/begin.view). 
+
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Mass_Spec1.png" width=450px/>
+<i><b>Figure</b> caption here</i>
+
+Using these ion chromatograms, we can find the area under the curve to estimate the abundance of each peptide. To find the relative abundance of a modification, we have to sum up all of the different modified forms of the peptide, and divide by the total area for that peptide.  So, using tools like Mascot, we can find the relative abundance of a specific peptide by dividing its area by the total area of all of the modifications.
+
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Mass_Spec2.png" width=450px/>
+<i><b>Figure</b> caption here</i>
+
+In figure A, we can see the relative quantification of the histone H3 peptide KQLATKAAR (aa 18 - 26). 
+In figure B, we can see the relative quantification of the histone H3 peptide KSTGGKAPR (aa 9 - 17). 
+In figure C, we can see the relative abundance of detected peptides for histone H3 with and without cell treatment with retinoic acid. 
+
+From these images, we can see that hESCs had a reduction of acetylated peptides when stimulated for differentiation. This data only shows the 35 modified forms of histone H3 that were quantified. However, MS has the power to more than 200 proteoforms, including all variants and low abundant modifications!
 
 ### Review of Histone Modification Analysis Techniques
+The most popular method of analyzing histone methylation method is ChIP-seq. It is a very powerful tool to analyze protein interactions with DNA, and is perfectly applicable to find and quantify histone modifications. 
+
+However, this technique has a low throughput and bias against hyper modified proteins. Alternatively, although more tedious, mass spectrometry is more precise when returning the relative abundance of several histone variants in a single analysis.
 
 ## Citations
 1. [Darst, Russell P et al. “Bisulfite sequencing of DNA.” Current protocols in molecular biology vol. Chapter 7 (2010): Unit 7.9.1-17. doi:10.1002/0471142727.mb0709s91.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214597/#S2title)  
