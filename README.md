@@ -80,17 +80,17 @@ The goal of DNA Methylation analysis is fairly obvious: we wish to detect what p
 
 Let's take an example: We have two bacterial samples that should both be expressing a gene that turns them blue. However, one culture appears blue while the other appears white. Given what we've learned, we may hypothesize that, for some reason, the white colony of bacteria have methylated the region containing the gene, thus downregulating it. How can we test this hypothesis?
 
-Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**. Therefore, we require other analysis technqiues, one that allows us to differentiate between these two:
+Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identical, yet the white colony shows little to no transcription of this gene. What we've just mentioned sets the context for DNA methylation analysis: **genetic sequencing is unable to distinguish methylated and non-methylated cytosine**.<sup>5</sup> Therefore, we require other analysis technqiues, one that allows us to differentiate between these two:
 
 ### I. Bisulfite Sequencing
 #### Overview
-Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected during sequencing as thymine, so every detected cytosine will be a methylated cytosine, giving a clear indication of which regions are methylated.
+Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique.<sup>1</sup> The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected during sequencing as thymine, so every detected cytosine will be a methylated cytosine, giving a clear indication of which regions are methylated.<sup>1</sup>
 
 ![Bisulfite Conversion](https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Bisulfite_Conversion.png)  
 <i><b>Figure 7</b> The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.</i>
 
 #### Lab Technique
-The first milestone in a bisulfite sequencing analysis is the treatment of DNA with [bisulfite](https://en.wikipedia.org/wiki/Bisulfite). There are three major steps in this protocol:
+The first milestone in a bisulfite sequencing analysis is the treatment of DNA with [bisulfite](https://en.wikipedia.org/wiki/Bisulfite). There are three major steps<sup>1</sup> in this protocol:
 
 1. Denaturation of DNA into single strands
 2. Incubation with bisulfite solution at high temperature
@@ -113,17 +113,17 @@ Bisulfite:  GTATCTAT
 Native:     GCATCTAC
 ```
 
-We see the bisulfite sequence identifies the cytosines at positions 2 and 9 as thymines, but the cytosine at position 5 remains a cytosine. We would conclue that the cytosines at positions 2 and 9 were not methylated, while the cytosine at position 2 was.
+We see the bisulfite sequence identifies the cytosines at positions 2 and 9 as thymines, but the cytosine at position 5 remains a cytosine. We would conclude that the cytosines at positions 2 and 9 were not methylated, while the cytosine at position 2 was.
 
-A related but more interesting analysis than a base-by-base comparison is one that answers, "What areas of this region of interest are methylation-rich?" Tools such as [MethylCoder](https://github.com/brentp/methylcode) provide the answer by aggeregating the results of the base-by-base comparison, determining locales with high aggregate values, and reporting the raw and aggregated results.
+A related but more interesting analysis than a base-by-base comparison is one that answers, "What areas of this region of interest are methylation-rich?" Tools such as [MethylCoder](https://github.com/brentp/methylcode)<sup>8</sup> provide the answer by aggeregating the results of the base-by-base comparison, determining locales with high aggregate values, and reporting the raw and aggregated results.
 
 #### Bonus - Whole Genome Bisulfite Sequencing Analysis
-The quintessential question asked of WGBS is, "What regions of the whole genome are methylation-rich?" Here, the data required for analysis are slightly different than before:
+The quintessential question asked of WGBS is, "What regions of the whole genome are methylation-rich?"<sup>5</sup> Here, the data required for analysis are slightly different than before:
 
 1. Bisulfite sequencing data (FASTQ)
 2. Reference genome of interest (FASTA)
 
-Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent tool for such an analysis. Given these inputs, the following general analysis steps are performed:
+Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/)<sup>4</sup> is one excellent tool for such an analysis. Given these inputs, the following general analysis steps are performed:
 
 1. Quality assessment of raw data
 2. Read alignment to reference genome
@@ -136,7 +136,7 @@ The tool will then output information about methylation-rich sites, relative met
 
 ### II. HELP Assay
 #### Overview
-The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverages restriction enzyme digestion analysis to determine DNA methylation patterns.
+The HpaII tiny fragment Enrichment by Ligation-mediated PCR (HELP) Assay leverages restriction enzyme digestion analysis to determine DNA methylation patterns.<sup>5</sup>
 
 Two restriction enzymes are used:
 1. HpaII, which cuts DNA at `CCGA` sites where the inner cytosine is *not* methylated
@@ -148,14 +148,14 @@ This results in MspI cutting DNA into some number of additional fragments compar
 <i><b>Figure 9</b> Overview of two (similar) variations of the HELP assay. Our focus is on the left protocol</i>
 
 #### Lab Technique
-Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI digestion. We assume the HpaII sample has been digested at only `CCGA` sites where the inner cytosine is *not* methylated, resulting in some number of fragments. Additionally, we assume the MspI sample has been digested at all of the sites that HpaII was, but additionally at `CCGA` sites where the inner cytosine *is* methylated.
+Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI digestion.<sup>6</sup> We assume the HpaII sample has been digested at only `CCGA` sites where the inner cytosine is *not* methylated, resulting in some number of fragments. Additionally, we assume the MspI sample has been digested at all of the sites that HpaII was, but additionally at `CCGA` sites where the inner cytosine *is* methylated.
 
-Each sample is then subjected to ligation-mediated PCR (LM-PCR). This protocol first adds linker sequences to every fragment. These sequences are complementary to fluorescently labeledd PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
+Each sample is then subjected to ligation-mediated PCR (LM-PCR).<sup>6</sup> This protocol first adds linker sequences to every fragment. These sequences are complementary to fluorescently labeledd PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Label_PCR.jpg" width=450px/>
 <i><b>Figure 10</b> Simplified idea of LM-PCR. Note the linker binding, the primer complementarity, and fluorescent label.</i>
 
-Next, a microarray is set up such that it contains binding sites for expected `CCGA` site cuts (determined using reference sequence analysis). Equal amounts of each PCR product is added evenly across the microarray, creating a mosaic of MspI and HpaII bound sequences. The microarray is then scanned twice, once for each type of fluorescent label used. The difference in fluorescence between the two is representative of the methylation level.
+Next, a microarray is set up such that it contains binding sites for expected `CCGA` site cuts (determined using reference sequence analysis).<sup>6</sup> Equal amounts of each PCR product is added evenly across the microarray, creating a mosaic of MspI and HpaII bound sequences. The microarray is then scanned twice, once for each type of fluorescent label used. The difference in fluorescence between the two is representative of the methylation level.
 
 #### Computational Analysis
 One of the key benefits of this technique is that it's fairly light on dry-lab analysis. Though results are generally more qualitative and inexact, it is a far simpler and easier protocol than bisulfite sequencing.
@@ -163,7 +163,7 @@ One of the key benefits of this technique is that it's fairly light on dry-lab a
 However, there have been attempts to increase the quantitative power of the assay. A data analysis pipeline in R was developed to take signal intensity data of the microarrays and run various normalizations and to quantify the differences. This pipeline, hoever, is *not* packaged as a tool, but contains a series of computational steps in R that are beyond the scope of this introductory epigenomics lesson. The detailed paper, however, is linked [here](https://academic.oup.com/bioinformatics/article/24/9/1161/207143) for reference.
 
 ### Review of DNA Methylation Analysis Techniques
-As mentioned before, bisulfite sequencing generally provides more quantifiably solid results than the HELP assay, but also requires greater wetlab and computational power. Indeed, the computational tools for bisulfite sequencing are plentiful, and will generate robust analyses. However, the HELP assay provides a great low-effort alternative for determining DNA methylation levels in a generic context.
+As mentioned before, bisulfite sequencing generally provides more quantifiably solid results than the HELP assay, but also requires greater wetlab and computational power.<sup>5</sup> Indeed, the computational tools for bisulfite sequencing are plentiful, and will generate robust analyses. However, the HELP assay provides a great low-effort alternative for determining DNA methylation levels in a generic context.
 
 From a broader perspective, a recurring limitation of DNA methylation analysis is that any given result is only a snapshot of a single cell at a given point in time. This means repeating an experiment on the same organism may yield vastly different results given that a different cell in a different point in time is used. 
 
