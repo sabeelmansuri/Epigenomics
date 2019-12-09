@@ -42,7 +42,7 @@ The addition of a methyl group to cytosines increases the steric bulk of the mol
 
 Because these grooves are critical for protein specificity recognition, the bulk created by the methyl group inhibits the binding of transcription factors and, therefore, downstream gene expression.
 
-<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Steric_Bulk.png" width=450px/>
+<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Steric_Bulk.png" height=300px/>
 <i><b>Figure</b> caption here</i>
 
 #### Protein Binding
