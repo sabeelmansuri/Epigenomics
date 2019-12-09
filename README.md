@@ -49,13 +49,13 @@ An upside for this correlation, however, is that observing this pattern in tumor
 
 ## Biology: Histone Modifications
 ### Introduction
-Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications to chromatin structure along with epigenetic markers influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.<sup>10</sup>
+Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications along with epigenetic markers, influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.<sup>10</sup> Let's explore some of these modifications. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Background.png" width=450px/>
 <i><b>Figure 3</b> General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.</i>
 
-### I. Histone Acetylation
-Acetylation connects a negative charge acetyl group to lysine residues of the N-terminal histone tails (specifically H3 and H4) by histone acetyltransferase (HAT).<sup>10</sup> By doing so, negatively charged DNA is repelled, causing the chromatin to relax into euchromatin and allow for transcription factors to bind and increase gene expression. Deacetylation by histone deacetylase (HDAC) however condenses chromatin into heterochromatin, therefore deactivating gene activity.<sup>7</sup>
+### I. Histone Acetylation/Deacetylation
+Acetylation connects a negative charge acetyl group to lysine residues of the N-terminal histone tails (specifically H3 and H4) by histone acetyltransferase (HAT).<sup>10</sup> By doing so, negatively charged DNA is repelled, causing the chromatin to relax into euchromatin, allowing for transcription factors to bind and increase gene expression. Opposingly, deacetylation by histone deacetylase (HDAC) condenses chromatin into heterochromatin, therefore deactivating gene activity.<sup>7</sup>
 
 <br />
 
@@ -63,13 +63,18 @@ Acetylation connects a negative charge acetyl group to lysine residues of the N-
 <i><b>Figure 4</b> Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.</i>
 
 ### II. Histone Methylation/Demethylation
-Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length.<sup>10</sup> Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression.<sup>7</sup> 
+Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. More specifically, arginine methylation activates transcription and transcriptional activities while lysine methylation effects depend on the methylation site and length.<sup>10</sup> 
+
+Methylation at different sites result in either activation or deactivation. Some common methylation sites are<sup>7</sup>: 
+
+1. H3K4, K36, and K79 which result in transcriptional activation
+2. H3K9, K27, and H4K20 while silence gene activity/expression
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Methylation.png" width=450px/>
 <i><b>Figure 5</b> Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.</i>
 
 ### III. Histone Phosphorylation
-Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occurring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair.<sup>10</sup>
+Unique from both histone methylation and acetylation, histone phosphorylation employs interactions between other histone modifications and binding proteins. Chromatin remodeling happens when a phosphoryl group attaches to the histone tail. This can occur on all histone core proteins, each having distinct effects. This process plays a primary role in cell division, transcriptional regulation, and DNA damage repair.<sup>10</sup>
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Phosphorylation.png" width=450px/>
 <i><b>Figure 6</b> One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.</i>
@@ -175,12 +180,12 @@ The goal of histone modification analysis is simply to identify the levels of mo
 
 In this section we will explore two popular techniques to do so: 
 
-1. ChIP-seq is utilized to study site-specific modifications
-2. Mass Spectrometry (MS) precisely compares global levels of specific modifications among different samples. 
+1. ChIP-seq, utilized in studying site-specific modifications
+2. Mass Spectrometry (MS), used to precisely compare global levels of specific modifications among different samples 
 
 ### I. ChIP-Seq
 #### Overview
-Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This can then be used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression.<sup>7</sup>
+Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein interactions with DNA. Specific antibodies are utilized to isolate a specific protein or modification factor of interest. This is used to identify the location and abundance of the protein or modification is within the genome, giving us insight into chromatin structure and gene expression.<sup>7</sup>
 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Seq.png" width=450px/>
@@ -188,7 +193,7 @@ Chromatin Immunoprecipitation (ChIP) is a powerful tool used to analyze protein 
 
 Let’s take an example: We have two samples of DNA, one for clear cell renal carcinoma and one for regular kidney cells.<sup>12</sup> We want to find sites where expression is higher in the clear cell renal carcinoma sample in order to potential histone modification sites. For this example, we will be using H3K27ac, meaning that there is acetylation at histone 3, at location 27. Given what we’ve learned about histone acetylation and ChIP-seq, how do we find these modification sites?
 
-We know that histone acetylation happens when acetyl group attaches to the histone tails of certain proteins by HAT. So by using ChIP, we can find where on our DNA sequence these acetyl groups are using protein-specific antibodies in our case, we will use anti-histone H3K27ac.
+We know that histone acetylation happens when acetyl group attaches to the histone tails of certain proteins by HAT. So by using ChIP, we can find which proteins on our DNA sequence these acetyl groups are using protein-specific antibodies. In our case, we will use anti-histone H3K27ac.
 
 #### Lab Technique
 Here is the basic protocol<sup>7</sup> for both samples:
@@ -203,25 +208,25 @@ Next, we prepare the sequence libraries by attaching sequence adaptors to both e
 We now move to computational analyses conducted on these data files.
 
 #### Computational Analysis
-Before jumping into the fun stuff we must:
+Before jumping into the fun stuff we must also:
 
 1. Clean the raw reads by removing adaptors and PCR duplicates
 2. Computationally align fragments to the reference genome 
 
-Next, we use peak-calling which utilizes different algorithms that identify regions where there are more reads than background. There are many different programs that generate these calls, popular software include: MACS, PeakSeq, SICER, CCAT, etc.<sup>2</sup> From here, your data can be visualized on a genome browser. 
+Next, we use peak-calling which utilizes different algorithms to identify regions where there are more reads than background. Popular software include: MACS, PeakSeq, SICER, CCAT, etc.<sup>2</sup> From here, we can visualize the data on a genome browser. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/ChIP_Visualization.png" width=450px/>
 <i><b>Figure 12</b> Visualization of peak-calling software output on a genome browser.</i>  
 
-We can clearly see that the bottom two rows (clear cell renal carcinoma) are higher levels of binding than the top two rows (regular kidney cells). This ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. From this, we can see where and which gene is overexpressed.<sup>12</sup> 
+We can clearly see that the bottom two rows (clear cell renal carcinoma) have higher levels of binding than the top two rows (regular kidney cells). More specifically, this ChIP-seq shows an active ZNF395 super-enhancer only in the clear cell renal carcinoma cells. We  have found where on the genome and which specific gene is overexpressed.<sup>12</sup> 
 
 ### II. Mass Spectrometry
 #### Overview
 Mass Spectrometry (MS) gives us an unbiased quantitative analysis of post-translational histone modifications. Unlike ChIP-seq, MS is designed to output a large variety of histone modifications and their relative abundance within a single analysis. However, this method involves more wet-lab preparation. The bottoms-up method is the most popular method, in which intact proteins are digested into short peptides for nano-liquid chromatography and mass spectroscopy.<sup>9</sup>
 
-Let’s take an example: We want to analyze histones from human embryonic stem cells (hESCs) with and without retinoic acid (important in cell growth, differentiation, and organogenesis). From this we want to figure out the relative abundance of histone modified peptides.<sup>9</sup> 
+Let’s take this example: We want to analyze histones from human embryonic stem cells (hESCs) with and without retinoic acid (important in cell growth, differentiation, and organogenesis). We want to figure out the relative abundance of histone modified peptides<sup>9</sup>. How can we utilize MS to figure this out?
 
-Because of the sophistication of the lab protocol, we will not be focusing on the biology of the lab technique, however we have simplified it below.
+Because of the sophistication of the lab protocol, we will not be focusing on the biology of the lab technique; however we have simplified it below.
 
 #### Lab Technique
 Here is the basic protocol<sup>9</sup> for MS: 
@@ -242,7 +247,7 @@ We will import these raw files into a software to perform peak area integration.
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Mass_Spec1.png" width=450px/>
 <i><b>Figure 13</b> Visualization of peak area integration output.</i>
 
-Using these ion chromatograms, we can find the area under the curve to estimate the abundance of each peptide. To find the relative abundance of a modification, we have to sum up all of the different modified forms of the peptide, and divide by the total area for that peptide.  So, using tools like Mascot, we can find the relative abundance of a specific peptide by dividing its area by the total area of all of the modifications.<sup>9</sup>
+Using these ion chromatograms, we can find the area under the curve to estimate the abundance of each peptide. To find the relative abundance of a modification, we sum up all of the different modified forms of the peptide and divide by the total area for that peptide.  Using tools like Mascot, we can find the relative abundance of a specific peptide by dividing its area by the total area of all of the modifications.<sup>9</sup>
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Mass_Spec2.png" width=450px/>
 <i><b>Figure 12</b> Results of relative abundance analysis.</i>
@@ -251,7 +256,9 @@ In figure A, we can see the relative quantification of the histone H3 peptide KQ
 In figure B, we can see the relative quantification of the histone H3 peptide KSTGGKAPR (aa 9 - 17). 
 In figure C, we can see the relative abundance of detected peptides for histone H3 with and without cell treatment with retinoic acid.<sup>9</sup> 
 
-From these images, we can see that hESCs had a reduction of acetylated peptides when stimulated for differentiation. This data only shows the 35 modified forms of histone H3 that were quantified.<sup>9</sup> However, MS has the power to more than 200 proteoforms, including all variants and low abundant modifications!
+We can see that hESCs had a reduction of acetylated peptides when stimulated for differentiation. 
+
+This data only shows the 35 modified forms of histone H3 that were quantified.<sup>9</sup> However, MS has the power to more than 200 proteoforms, including all variants and low abundant modifications!
 
 ### Review of Histone Modification Analysis Techniques
 The most popular method of analyzing histone methylation method is ChIP-seq. It is a very powerful tool to analyze protein interactions with DNA, and is perfectly applicable to find and quantify histone modifications. However, this technique has a low throughput and bias against hyper modified proteins. Alternatively, although more tedious mass spectrometry is more precise, returning the relative abundance of several histone variants on a global level in a single analysis.
