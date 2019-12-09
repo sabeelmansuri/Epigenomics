@@ -150,10 +150,10 @@ This results in MspI cutting DNA into some number of additional fragments compar
 #### Lab Technique
 Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI digestion. We assume the HpaII sample has been digested at only `CCGA` sites where the inner cytosine is *not* methylated, resulting in some number of fragments. Additionally, we assume the MspI sample has been digested at all of the sites that HpaII was, but additionally at `CCGA` sites where the inner cytosine *is* methylated.
 
-Each sample is then subjected to ligation-mediated PCR (LM-PCR). This protocol first links fluorescently labeled sequences to every fragment. These sequences are complementary to the PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
+Each sample is then subjected to ligation-mediated PCR (LM-PCR). This protocol first adds linker sequences to every fragment. These sequences are complementary to fluorescently labeledd PCR primers, so each fragment is amplified without worry of complementarity/primer specificity. This yields a fluorescently detectible pool of DNA which has a quantity relative to the initial number of fragments. Importantly, the HpaII and MspI PCR reactions use different fluorescent labels.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Label_PCR.jpg" width=450px/>
-<i><b>Figure</b> caption here</i>
+<i><b>Figure</b> Simplified idea of LM-PCR. Note the linker binding, the primer complementarity, and fluorescent label.</i>
 
 Next, a microarray is set up such that it contains binding sites for expected `CCGA` site cuts (determined using reference sequence analysis). Equal amounts of each PCR product is added evenly across the microarray, creating a mosaic of MspI and HpaII bound sequences. The microarray is then scanned twice, once for each type of fluorescent label used. The difference in fluorescence between the two is representative of the methylation level.
 
