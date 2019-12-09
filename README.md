@@ -16,13 +16,9 @@ On the surface, it appears to be a simplistic process. DNA methyltransferases (D
 ### I. CpG Islands
 As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site. CpG sites are often grouped together in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.
 
-<img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/CpG_Island.png" width=450px/>
-<i><b>Figure</b> caption here</i>
-
 For a region to be considered a CpG island, it must have:
-
 1. A sequence length longer than 200bp
-2. A G+C content of more than 50%
+2. A GC content of more than 50%
 3. A statistical ratio of observed/expected CpG (cytosine followed by guanine) greater than 0.6
 
 In human genome, there are around 25,000 such CpG islands, about half of which contain transcription start sites. Such CpG islands can directly influence expression levels, which we'll explore next.
@@ -36,7 +32,7 @@ The addition of a methyl group to cytosines increases the steric bulk of the mol
 Because these grooves are critical for protein specificity recognition, the bulk created by the methyl group inhibits the binding of transcription factors and, therefore, downstream gene expression.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Steric_Bulk.png" height=300px/>
-<i><b>Figure</b> caption here</i>
+<i><b>Figure 1</b> Overview of steric hinderance caused by methylation of DNA, resulting in transcriptional repression.</i>
 
 #### Protein Binding
 There exist proteins that bind to CpG motifs if and only if they are methylated. These proteins are denoted “Methyl-CpG-binding domain proteins” (MBDs). MBD binding innately amplifies the steric hinderance mentioned above.
@@ -49,15 +45,14 @@ To underscore the importance of DNA methylation on a broader scale, we mention i
 An upside for this correlation, however, is that observing this pattern in tumor cells has opened the door for epigenetic treatment. There are currently drugs available that specifically target demethylation of tumor suppressor gene hypermethylation, and more are in development.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Methylation_Cancer.png" width=450px/>
-<i><b>Figure</b> caption here</i>
+<i><b>Figure 2</b> Example of hyper/hypomethylation in a tumor cell.</i>
 
 ## Biology: Histone Modifications
 ### Introduction
 Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications to chromatin structure along with epigenetic markers influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression<sup>10</sup>.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Background.png" width=450px/>
-<i><b>Figure</b> General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.</i>
-
+<i><b>Figure 3</b> General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.</i>
 
 ### I. Histone Acetylation
 Acetylation connects a negative charge acetyl group to lysine residues of the N-terminal histone tails (specifically H3 and H4) by histone acetyltransferase (HAT)<sup>10</sup>. By doing so, negatively charged DNA is repelled, causing the chromatin to relax into euchromatin and allow for transcription factors to bind and increase gene expression. Deacetylation by histone deacetylase (HDAC) however condenses chromatin into heterochromatin, therefore deactivating gene activity<sup>7</sup>.
@@ -65,19 +60,19 @@ Acetylation connects a negative charge acetyl group to lysine residues of the N-
 <br />
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Acetylation.png" width=450px/>
-<i><b>Figure</b> Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.</i>
+<i><b>Figure 4</b> Acetylation of histones, leading to relaxation of DNA into euchromatin. Note the larger regions of exposed DNA open for transcription after acetylation.</i>
 
 ### II. Histone Methylation/Demethylation
 Unlike histone acetylation, methylation is a post-translational epigenetic modification that does not directly change histone charge or histone-DNA interactions. Instead, a methyl group is added to lysine or arginine residues of histone tails, each impacting transcription differently. Arginine methylation activates transcription and transcriptional activities, while Lysine methylation’s effect depends on the methylation site and length<sup>10</sup>. Methylation of sites such as H3K4, K36, and K79 result in transcriptional activation, while methylation of H3K9, K27, and H4K20 silence gene activity/expression<sup>7</sup>. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Methylation.png" width=450px/>
-<i><b>Figure</b> Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.</i>
+<i><b>Figure 5</b> Histone methylations at various locations. Notice both activation and repression is possible depending on methylation type.</i>
 
 ### III. Histone Phosphorylation
 Unique from histone methylation and acetylation, histone phosphorylation employs interaction between other histone modifications and binding proteins. Chromatin remodeling happens by attaching a phosphoryl group to histone tails, occuring on all histone core proteins, having distinct effects on each. This process plays a huge role in cell division, transcriptional regulation, and DNA damage repair<sup>10</sup>. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Phosphorylation.png" width=450px/>
-<i><b>Figure</b> One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.</i>
+<i><b>Figure 6</b> One example of histone phosphorylation. Various possible signals caused by this particular phosphorylation are described.</i>
 
 ## Analysis Techniques: DNA Methylation
 ### Background
@@ -92,7 +87,7 @@ Indeed, genetic sequencing shows the DNA sequence of both bacteria to be identic
 Bisulfite sequencing is the most widely-used and popular DNA Methylation analysis technique. The core idea is to convert non-methylated cytosine into uracil, but keep methylated cytosine unchanged. Then, run a sequencing analysis. The converted cytosine (now uracil) will be detected during sequencing as thymine, so every detected cytosine will be a methylated cytosine, giving a clear indication of which regions are methylated.
 
 ![Bisulfite Conversion](https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Bisulfite_Conversion.png)  
-<i><b>Figure</b> The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.</i>
+<i><b>Figure 7</b> The conversion of non-methylated cytosine into uracil, which are read as thymines by sequencing technology. Notice that methylated cytosine are unchanged and remain sequenced as cytosines.</i>
 
 #### Lab Technique
 The first milestone in a bisulfite sequencing analysis is the treatment of DNA with [bisulfite](https://en.wikipedia.org/wiki/Bisulfite). There are three major steps in this protocol:
@@ -137,7 +132,7 @@ Recently developed [EPIC TABSAT](https://tabsat.ait.ac.at/) is one excellent too
 The tool will then output information about methylation-rich sites, relative methylation level, and more (shown below).
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/WGBS.jpg"/>
-<i><b>Figure</b> Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note in particular 1) the lollipop plot that shows % methylation arranged according to samples' accurate chromosomal coordinates and 2) the patternmap showing methylation significance by sample.</i>
+<i><b>Figure 8</b> Summary of various data outputs by EPIC TABSAT (click above for clearer image). Note in particular 1) the lollipop plot that shows % methylation arranged according to samples' accurate chromosomal coordinates and 2) the patternmap showing methylation significance by sample.</i>
 
 ### II. HELP Assay
 #### Overview
@@ -150,7 +145,7 @@ Two restriction enzymes are used:
 This results in MspI cutting DNA into some number of additional fragments compared to HpaII, and calculating the magnitude of this difference provides a relative measurement of DNA methylation.
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/HELP_Overview.png" width=450px/>
-<i><b>Figure</b> Overview of two variations of the HELP assay. Note that overall idea is identical.</i>
+<i><b>Figure 9</b> Overview of two (similar) variations of the HELP assay. Our focus is on the left protocol</i>
 
 #### Lab Technique
 Two DNA samples are isolated and, in parallel, subjected to either HpaII or MspI digestion. We assume the HpaII sample has been digested at only `CCGA` sites where the inner cytosine is *not* methylated, resulting in some number of fragments. Additionally, we assume the MspI sample has been digested at all of the sites that HpaII was, but additionally at `CCGA` sites where the inner cytosine *is* methylated.
