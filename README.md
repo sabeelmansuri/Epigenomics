@@ -11,7 +11,7 @@ We will briefly describe the biology of the two most well-known epigenomic modif
 ### Introduction
 The first epigenomic modification discovered was DNA methylation. Uncovered as early as when Rollin Hotchkiss formalized the notion of DNA being the genetic material (1984), DNA methylation remains one of the most influential epigenomic modifications today.<sup>13</sup>
 
-On the surface, it appears to be a simplistic process. DNA methyltransferases (DNMTs) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA. As we'll see, this simple change can have an astronomic effect. First, some basics.
+On the surface, it appears to be a simplistic process. DNA methyltransferases (DNMTs) transfer methyl groups from S-adenosyl methionine (SAM) to the fifth carbon of cytosine residues to form 5-methylcytosine (5mC), thereby directly methylating DNA.<sup>3</sup> As we'll see, this simple change can have an astronomic effect. First, some basics.
 
 ### I. CpG Islands
 As mentioned above, it is cytosine bases that are methylated. Not all cytosines, however, are equally prone to methylation; the majority of methylation happens on cytosines that precede a guanine nucleotide, a motif called a CpG site.<sup>3</sup> CpG sites are often grouped in close proximity, which forms a CpG island. The overall methylation of CpG islands is the primary driver of methylation changing gene expression.<sup>3</sup>
