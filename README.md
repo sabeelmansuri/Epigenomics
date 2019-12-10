@@ -49,7 +49,7 @@ An upside for this correlation, however, is that observing this pattern in tumor
 
 ## Biology: Histone Modifications
 ### Introduction
-Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, ubiquitylation, and others still being researched. The histone code hypothesis suggests that these modifications along with epigenetic markers, influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.<sup>10</sup> Let's explore some of these modifications. 
+Histones are proteins found in eukaryotic cell nuclei that order DNA into nucleosomes. These components of chromatin are subject to post-translational modifications including methylation, acetylation, phosphorylation, and others still being researched. The histone code hypothesis suggests that these modifications, along with epigenetic markers, influence the recruitment of proteins responsible for regulating gene expression. Multiple modifications work together simultaneously to regulate and change chromatin state and gene expression.<sup>10</sup> Let's explore some of these modifications. 
 
 <img src="https://github.com/sabeelmansuri/Epigenomics/blob/master/assets/Histone_Background.png" width=450px/>
 <i><b>Figure 3</b> General structure of a DNA-histone complex. The two most common modifications (acetylation) and (methylation) are shown.</i>
@@ -226,10 +226,13 @@ Mass Spectrometry (MS) gives us an unbiased quantitative analysis of post-transl
 
 Let’s take this example: We want to analyze histones from human embryonic stem cells (hESCs) with and without retinoic acid (important in cell growth, differentiation, and organogenesis). We want to figure out the relative abundance of histone modified peptides<sup>9</sup>. How can we utilize MS to figure this out?
 
-Because of the sophistication of the lab protocol, we will not be focusing on the biology of the lab technique; however we have simplified it below.
-
 #### Lab Technique
-Here is the basic protocol<sup>9</sup> for MS: 
+Because of the sophistication of the lab protocol, we will not be focusing on the biology of the lab technique.
+
+<details>
+  <summary>However, you may click here for a simplified step-by-step protocol</summary>
+  
+  Here is the basic protocol<sup>9</sup> for MS: 
 1. Harvest cells of interest and isolate the nuclei 
 2. Perform histone purification 
 3. Perform histone variant fractionation
@@ -238,6 +241,8 @@ Here is the basic protocol<sup>9</sup> for MS:
 6. Histone digestion using Trypsin
 7. Propionylation of Histone Peptides at N-termini
 8. Stage-tip desalting 
+  
+</details>
 
 We will now focus on the computational analyses conducted on these MS raw data files.
 
