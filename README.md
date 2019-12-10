@@ -230,9 +230,8 @@ Let’s take this example: We want to analyze histones from human embryonic stem
 Because of the sophistication of the lab protocol, we will not be focusing on the biology of the lab technique.
 
 <details>
-  <summary>However, you may click here for a simplified step-by-step protocol</summary>
-  
-  Here is the basic protocol<sup>9</sup> for MS: 
+  <summary>However, you may click here for a simplified step-by-step protocol<sup>9</sup></summary>
+
 1. Harvest cells of interest and isolate the nuclei 
 2. Perform histone purification 
 3. Perform histone variant fractionation
@@ -268,7 +267,12 @@ This data only shows the 35 modified forms of histone H3 that were quantified.<s
 ### Review of Histone Modification Analysis Techniques
 The most popular method of analyzing histone methylation method is ChIP-seq. It is a very powerful tool to analyze protein interactions with DNA, and is perfectly applicable to find and quantify histone modifications. However, this technique has a low throughput and bias against hyper modified proteins. Alternatively, although more tedious mass spectrometry is more precise, returning the relative abundance of several histone variants on a global level in a single analysis.
 
-The analysis of histone modifications is becoming increasingly prevalent in cancer, pathology, and developmental research as well as precision medicine. With the immergence of these new technologies and research, we can expect exciting innovative approaches to medicine and healthcare.  
+The analysis of histone modifications is becoming increasingly prevalent in cancer, pathology, and developmental research as well as precision medicine. With the immergence of these new technologies and research, we can expect exciting innovative approaches to medicine and healthcare. 
+
+## Concluding Remarks
+We've scratched the surface of major epigenomic modifications and some analysis techniques used to quantify them. Yet, the opportunity for exploration and development is vast.
+
+We hope to have, at the very least, demonstrated the importance of these epigenomic modifications, and inspired further research into their future applications.
 
 ## Citations
 1. [Darst, Russell P et al. “Bisulfite sequencing of DNA.” Current protocols in molecular biology vol. Chapter 7 (2010): Unit 7.9.1-17. doi:10.1002/0471142727.mb0709s91.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214597/#S2title)  
